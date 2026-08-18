@@ -1,0 +1,158 @@
+{
+    "Logic": {
+        "SkillId": 11010108,
+        "Name": "冰川风暴",
+        "Type": 1,
+        "AllowedTargets": 2,
+        "CastRange": 7,
+        "Cooldown": 12,
+        "CostMana": 50,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 14,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "ChannelStart",
+                "Param": ""
+            },
+            {
+                "Time": 0,
+                "Duration": 0.22,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.22,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "Pierce",
+                    "CasterFeedbackType": "",
+                    "AreaSpawns": [
+                        {
+                            "Name": "冰川风暴",
+                            "Anchor": {
+                                "SelectorType": 2,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "Duration": 7,
+                            "TickInterval": 0.5,
+                            "ReplaceSame": true,
+                            "Shape": {
+                                "ShapeType": 1,
+                                "SizeX": 3.4,
+                                "SizeY": 1,
+                                "SizeZ": 0,
+                                "OffsetX": 0,
+                                "OffsetY": 0,
+                                "OffsetZ": 0
+                            },
+                            "TickEffect": {
+                                "Damage": {
+                                    "BaseDamage": 0,
+                                    "Coefficient": 1,
+                                    "DamageType": 1
+                                },
+                                "TargetBuffs": [
+                                    {
+                                        "BuffId": 3002,
+                                        "Chance": 1,
+                                        "Relation": 2,
+                                        "RequireStatusFlags": 0,
+                                        "OverrideDuration": 1.2
+                                    }
+                                ]
+                            },
+                            "TickFeedback": {
+                                "AttackType": "Pierce",
+                                "CasterFeedbackType": ""
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 0.3,
+                "Duration": 6.7,
+                "Track": 13,
+                "Key": "AllowCancel",
+                "Param": ""
+            },
+            {
+                "Time": 7,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "",
+                    "CasterFeedbackType": "",
+                    "CasterBuffs": [
+                        {
+                            "BuffId": 3007,
+                            "Chance": 0,
+                            "Relation": 0,
+                            "RequireStatusFlags": 0,
+                            "OverrideDuration": 0.05
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 7,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "ChannelEnd",
+                "Param": ""
+            },
+            {
+                "Time": 7.05,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 11010108,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 7.1,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack2"
+            },
+            {
+                "Time": 0,
+                "Duration": 0.28,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_MagicCast"
+            },
+            {
+                "Time": 0.22,
+                "Duration": 6.8,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_SlowRing,Aim"
+            }
+        ]
+    }
+}

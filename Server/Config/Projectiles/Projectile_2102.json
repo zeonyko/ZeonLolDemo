@@ -1,0 +1,59 @@
+{
+  "Logic": {
+    "HasImpact": false,
+    "ImpactRadius": 0,
+    "ProjectileId": 2102,
+    "Name": "万箭齐发",
+    "Width": 0.4,
+    "Speed": 16,
+    "MaxDistance": 6.5,
+    "MaxTargets": 1,
+    "PierceCount": 1,
+    "BoltCount": 7,
+    "SpreadDegrees": 54,
+    "VfxKey": "",
+    "VfxColorR": 0.9,
+    "VfxColorG": 0.9,
+    "VfxColorB": 1,
+    "VfxColorA": 0.9,
+    "VfxScaleX": 0.4,
+    "VfxScaleY": 0.4,
+    "VfxYLift": 0,
+    "ImpactDelay": 0,
+    "CollisionShape": {
+      "Type": 1,
+      "ShapeType": 1,
+      "SizeX": 0.225,
+      "SizeY": 0,
+      "SizeZ": 0,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "OffsetZ": 0
+    },
+    "HitEffect": {
+      "Damage": {
+        "Type": 0,
+        "BaseDamage": 0,
+        "Coefficient": 1,
+        "DamageType": 0
+      },
+      "TargetBuffs": [
+        {
+          "TargetRelation": 2,
+          "BuffId": 3002,
+          "Chance": 1,
+          "Relation": 2,
+          "RequireStatusFlags": 0,
+          "OverrideDuration": 2
+        }
+      ]
+    },
+    "HitFeedback": {
+      "AttackType": "",
+      "CasterFeedbackType": ""
+    },
+    "Impact": null,
+    "SpawnAreaOnHit": false,
+    "GroundArea": null
+  }
+}

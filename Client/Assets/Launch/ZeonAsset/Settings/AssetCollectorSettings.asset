@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d2132e0009653429eeb99070dde50d, type: 3}
+  m_Name: AssetCollectorSettings
+  m_EditorClassIdentifier: 
+  PackageName: manifest
+  AutoPromoteShareThreshold: 2
+  OutputFolder: Bundles
+  CdnFolder: ../CDN
+  CollectAtlasSourceSprites: 0
+  Groups:
+  - GroupName: Login
+    Active: 1
+    Tags:
+    - Login
+    - Builtin
+    Collectors:
+    - CollectorName: Login
+      Active: 1
+      CollectPath: Assets/Login
+      Filter: 0
+      CustomExtensions: .prefab,.png,.jpg,.mat,.fbx,.asset,.unity,.wav,.json,.bytes
+      PackRule: 2
+      Addressable: 1
+  - GroupName: Game
+    Active: 1
+    Tags:
+    - Game
+    Collectors:
+    - CollectorName: Game
+      Active: 1
+      CollectPath: Assets/Game
+      Filter: 0
+      CustomExtensions: .prefab,.png,.jpg,.mat,.fbx,.asset,.unity,.wav,.mp4,.bytes,.json
+      PackRule: 2
+      Addressable: 1
+  - GroupName: HybridClrHotUpdateDlls
+    Active: 1
+    Tags: []
+    Collectors:
+    - CollectorName: HotUpdate Assemblies
+      Active: 1
+      CollectPath: Assets/GameDlls/HotUpdate
+      Filter: 6
+      CustomExtensions: .bytes
+      PackRule: 1
+      Addressable: 1
+  - GroupName: HybridClrAotDlls
+    Active: 1
+    Tags: []
+    Collectors:
+    - CollectorName: AOT Metadata
+      Active: 1
+      CollectPath: Assets/GameDlls/AOT
+      Filter: 6
+      CustomExtensions: .bytes
+      PackRule: 1
+      Addressable: 1
+  TagRules:
+  - Active: 1
+    PathPrefix: Assets/Login/
+    Note: "\u767B\u5F55\u5168\u90E8\u8D44\u6E90 \u2014 \u9996\u5305"
+    Tags:
+    - Login
+    - Builtin
+  - Active: 1
+    PathPrefix: Assets/Game/
+    Note: "\u73A9\u6CD5\u8D44\u6E90 \u2014 \u6309\u9700\u4E0B\u8F7D"
+    Tags:
+    - Game
+  - Active: 1
+    PathPrefix: Assets/GameDlls/AOT/
+    Note: "AOT \u8865\u5145\u5143\u6570\u636E DLL"
+    Tags:
+    - AOT
+  - Active: 1
+    PathPrefix: Assets/GameDlls/HotUpdate/
+    Note: "\u70ED\u66F4\u7A0B\u5E8F\u96C6 DLL"
+    Tags:
+    - HotUpdate

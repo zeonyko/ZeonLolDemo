@@ -1,0 +1,150 @@
+{
+  "Logic": {
+    "SkillId": 11010203,
+    "Name": "缠绕之根",
+    "Type": 0,
+    "AllowedTargets": 2,
+    "CastRange": 6.5,
+    "Cooldown": 12,
+    "CostMana": 40,
+    "CanCastInStun": false,
+    "OrientToTargetOnCast": true,
+    "Damage": 55,
+    "Clips": [
+      {
+        "Time": 0,
+        "Duration": 0.22,
+        "Track": 10,
+        "Key": "Windup",
+        "Param": ""
+      },
+      {
+        "Time": 0.45,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "KnockUp",
+          "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+          "ShapeHits": [
+            {
+              "Name": "缠绕之根",
+              "Anchor": {
+                "SelectorType": 2,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 1,
+                "SizeX": 3.0,
+                "SizeY": 0,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 1,
+                  "DamageType": 1
+                },
+                "TargetBuffs": [
+                  {
+                    "BuffId": 3003,
+                    "Chance": 1,
+                    "Relation": 2,
+                    "RequireStatusFlags": 0,
+                    "OverrideDuration": 1.4
+                  }
+                ]
+              },
+              "Feedback": {
+                "AttackType": "KnockUp",
+                "CasterFeedbackType": "Caster_Feedback_HeavyImpact"
+              }
+            }
+          ],
+          "AreaSpawns": [
+            {
+              "Name": "荆棘地带",
+              "Anchor": {
+                "SelectorType": 2,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Duration": 2.2,
+              "TickInterval": 0.5,
+              "ReplaceSame": true,
+              "Shape": {
+                "ShapeType": 1,
+                "SizeX": 3.0,
+                "SizeY": 1,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0
+              },
+              "TickEffect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 0,
+                  "DamageType": 1
+                },
+                "TargetBuffs": [
+                  {
+                    "BuffId": 3002,
+                    "Chance": 1,
+                    "Relation": 2,
+                    "RequireStatusFlags": 0,
+                    "OverrideDuration": 1.2
+                  }
+                ]
+              },
+              "TickFeedback": {
+                "AttackType": "",
+                "CasterFeedbackType": ""
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 0.5,
+        "Duration": 0.28,
+        "Track": 10,
+        "Key": "Recovery",
+        "Param": ""
+      },
+      {
+        "Time": 0.55,
+        "Duration": 0.4,
+        "Track": 13,
+        "Key": "AllowCancel",
+        "Param": ""
+      },
+      {
+        "Time": 0.8,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "End",
+        "Param": ""
+      }
+    ]
+  }
+}

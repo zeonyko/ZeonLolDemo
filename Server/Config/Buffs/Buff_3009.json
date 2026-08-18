@@ -1,0 +1,30 @@
+{
+  "Logic": {
+    "Kind": 2,
+    "ValueSrc": 0,
+    "BuffType": 0,
+    "BuffStackType": 0,
+    "Attach": 1,
+    "BuffId": 3009,
+    "Name": "破甲",
+    "Type": 0,
+    "DefaultDuration": 3.5,
+    "StackType": 0,
+    "MaxStacks": 1,
+    "StatusFlags": 16,
+    "AttributeModifiers": [],
+    "TickInterval": 0.5,
+    "PeriodDamage": 6,
+    "EffectKind": 2,
+    "ValueSource": 0,
+    "LoopVfxKey": "",
+    "AttachPoint": 1,
+    "TintR": 1,
+    "TintG": 1,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  }
+}

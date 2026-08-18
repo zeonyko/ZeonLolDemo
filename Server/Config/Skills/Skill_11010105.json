@@ -1,0 +1,122 @@
+{
+  "Logic": {
+    "SkillId": 11010105,
+    "Name": "旋风斩击",
+    "Type": 0,
+    "AllowedTargets": 3,
+    "CastRange": 2.4,
+    "Cooldown": 6,
+    "CostMana": 25,
+    "CanCastInStun": false,
+    "OrientToTargetOnCast": true,
+    "Damage": 50,
+    "Clips": [
+      {
+        "Time": 0,
+        "Duration": 0.18,
+        "Track": 10,
+        "Key": "Windup",
+        "Param": ""
+      },
+      {
+        "Time": 0,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "",
+          "CasterFeedbackType": "",
+          "CasterBuffs": [
+            {
+              "BuffId": 3007,
+              "Chance": 1,
+              "Relation": 0,
+              "RequireStatusFlags": 0,
+              "OverrideDuration": 2.5
+            }
+          ]
+        }
+      },
+      {
+        "Time": 0.18,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "HeavySlash",
+          "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+          "ShapeHits": [
+            {
+              "Name": "顺劈扇形",
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 2,
+                "SizeX": 2.6,
+                "SizeY": 120,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 1,
+                  "DamageType": 0
+                },
+                "TargetBuffs": [
+                  {
+                    "BuffId": 3002,
+                    "Chance": 1,
+                    "Relation": 2,
+                    "RequireStatusFlags": 0,
+                    "OverrideDuration": 2.5
+                  }
+                ],
+                "KnockbackDistance": 1.8
+              },
+              "Feedback": {
+                "AttackType": "HeavySlash",
+                "CasterFeedbackType": "Caster_Feedback_HeavyImpact"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 0.18,
+        "Duration": 0.32,
+        "Track": 10,
+        "Key": "Recovery",
+        "Param": ""
+      },
+      {
+        "Time": 0.5,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "End",
+        "Param": ""
+      },
+      {
+        "Time": 0.5,
+        "Duration": 0.5,
+        "Track": 13,
+        "Key": "AllowCancel",
+        "Param": ""
+      }
+    ]
+  }
+}

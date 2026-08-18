@@ -1,0 +1,13 @@
+{
+    "ReactionId":  "Hit_Default_ArmorOnly",
+    "Duration":  0.15,
+    "HitStop":  0.02,
+    "Actions":  [
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_Hit",
+                        "Duration":  0.2
+                    }
+                ]
+}

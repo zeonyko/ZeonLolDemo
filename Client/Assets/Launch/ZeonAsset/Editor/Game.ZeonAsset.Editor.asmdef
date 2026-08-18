@@ -1,0 +1,27 @@
+{
+    "name": "Game.ZeonAsset.Editor",
+    "rootNamespace": "Game.ZeonAsset.Editor",
+    "references": [
+        "Game.ZeonAsset",
+        "UnityEngine.UI",
+        "Unity.ScriptableBuildPipeline.Editor",
+        "Unity.ScriptableBuildPipeline"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.scriptablebuildpipeline",
+            "expression": "1.0.0",
+            "define": "ZEONASSET_SBP"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdcb3162b2afb04f8817a62d874ffb7, type: 3}
+  m_Name: Projectile_2101
+  m_EditorClassIdentifier: 
+  ProjectileId: 2101
+  ProjectileName: "\u7206\u88C2\u706B\u7403"
+  VfxKey: Vfx_Fireball
+  Width: 0.75
+  Speed: 11
+  MaxDistance: 6.8
+  MaxTargets: 1
+  PierceCount: 1
+  BoltCount: 1
+  SpreadDegrees: 0
+  VfxColor: {r: 1, g: 0.4, b: 0.1, a: 1}
+  VfxScale: {x: 0.95, y: 0.95}
+  VfxYLift: 1
+  ImpactDelay: 1.2
+  CollisionShape:
+    ShapeType: 1
+    ShapeSize: {x: 0.375, y: 0, z: 0}
+    Offset: {x: 0, y: 0, z: 0}
+  HitEffect:
+    Damage:
+      BaseDamage: 0
+      Coefficient: 0.3
+      DamageType: 0
+    TargetBuffs:
+    - BuffId: 3002
+      Relation: 2
+      RequireStatusFlags: 0
+      Chance: 1
+      OverrideDuration: 0
+    KnockbackDistance: 0
+  HitFeedback:
+    AttackType: Pierce
+    CasterFeedbackType: Caster_Feedback_Pierce
+  Impact:
+    AttackType: HeavyBlow
+    CasterFeedbackType: Caster_Feedback_HeavyImpact
+    ShapeHits:
+    - Name: 
+      Anchor:
+        SelectorType: 2
+        Relation: 2
+        SearchRadius: 0
+        MaxTargetCount: 1
+        PositionOffset: {x: 0, y: 0, z: 0}
+        RotationOffset: {x: 0, y: 0, z: 0}
+      Shape:
+        ShapeType: 1
+        ShapeSize: {x: 3.5, y: 0, z: 0}
+        Offset: {x: 0, y: 0, z: 0}
+      Effect:
+        Damage:
+          BaseDamage: 0
+          Coefficient: 2.4
+          DamageType: 0
+        TargetBuffs:
+        - BuffId: 3006
+          Relation: 2
+          RequireStatusFlags: 0
+          Chance: 1
+          OverrideDuration: 0
+        KnockbackDistance: 0
+      Feedback:
+        AttackType: HeavyBlow
+        CasterFeedbackType: Caster_Feedback_HeavyImpact
+  SpawnAreaOnHit: 1
+  GroundArea:
+    Enabled: 1
+    Name: "\u707C\u70E7\u5708"
+    Anchor:
+      SelectorType: 2
+      Relation: 2
+      SearchRadius: 0
+      MaxTargetCount: 1
+      PositionOffset: {x: 0, y: 0, z: 0}
+      RotationOffset: {x: 0, y: 0, z: 0}
+    Duration: 2
+    TickInterval: 0.4
+    ReplaceSame: 1
+    Shape:
+      ShapeType: 1
+      ShapeSize: {x: 2.8, y: 0, z: 0}
+      Offset: {x: 0, y: 0, z: 0}
+    TickEffect:
+      Damage:
+        BaseDamage: 0
+        Coefficient: 0.25
+        DamageType: 0
+      TargetBuffs:
+      - BuffId: 3006
+        Relation: 2
+        RequireStatusFlags: 0
+        Chance: 1
+        OverrideDuration: 0
+      KnockbackDistance: 0
+    TickFeedback:
+      AttackType: 
+      CasterFeedbackType: 

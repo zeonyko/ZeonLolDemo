@@ -1,0 +1,218 @@
+{
+  "Logic": {
+    "SkillId": 11010107,
+    "Name": "狂风绝息",
+    "Type": 0,
+    "AllowedTargets": 3,
+    "CastRange": 3.5,
+    "Cooldown": 7,
+    "CostMana": 20,
+    "CanCastInStun": false,
+    "OrientToTargetOnCast": true,
+    "Damage": 65,
+    "Clips": [
+      {
+        "Time": 0,
+        "Duration": 0.28,
+        "Track": 10,
+        "Key": "Windup",
+        "Param": ""
+      },
+      {
+        "Time": 0.28,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "LightSlash",
+          "CasterFeedbackType": "Caster_Feedback_LightSlash",
+          "ShapeHits": [
+            {
+              "Name": "一刀",
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 0,
+                "SizeX": 2.2,
+                "SizeY": 1.85,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0.25
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 0.75,
+                  "DamageType": 0
+                },
+                "KnockbackDistance": 0
+              },
+              "Feedback": {
+                "AttackType": "LightSlash",
+                "CasterFeedbackType": "Caster_Feedback_LightSlash",
+                "CasterStopFrameTime": 0.04
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 0.9,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "KnockUp",
+          "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+          "ShapeHits": [
+            {
+              "Name": "两刀",
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 0,
+                "SizeX": 2.35,
+                "SizeY": 2.0,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0.3
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 0.9,
+                  "DamageType": 0
+                },
+                "KnockbackDistance": 0.6,
+                "TargetBuffs": [
+                  {
+                    "BuffId": 3003,
+                    "Chance": 1,
+                    "Relation": 2,
+                    "RequireStatusFlags": 0,
+                    "OverrideDuration": 1.4
+                  }
+                ]
+              },
+              "Feedback": {
+                "AttackType": "KnockUp",
+                "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+                "CasterStopFrameTime": 0.08,
+                "CameraShakeId": "Shake_Light"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 1.55,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "HeavyBlow",
+          "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+          "ShapeHits": [
+            {
+              "Name": "终刀",
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 0,
+                "SizeX": 2.9,
+                "SizeY": 2.3,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0.4
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 1.4,
+                  "DamageType": 0
+                },
+                "KnockbackDistance": 3.2
+              },
+              "Feedback": {
+                "AttackType": "HeavyBlow",
+                "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+                "CasterStopFrameTime": 0.14,
+                "CameraShakeId": "Shake_Heavy"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 1.5,
+        "Duration": 0.12,
+        "Track": 12,
+        "Key": "CommitDash",
+        "Param": "1.2;0;0",
+        "Motion": {
+          "MotionType": 2,
+          "Distance": 1.2,
+          "TargetType": 0,
+          "CollisionPolicy": 0
+        }
+      },
+      {
+        "Time": 1.6,
+        "Duration": 0.45,
+        "Track": 10,
+        "Key": "Recovery",
+        "Param": ""
+      },
+      {
+        "Time": 2.05,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "End",
+        "Param": ""
+      },
+      {
+        "Time": 1.85,
+        "Duration": 0.4,
+        "Track": 13,
+        "Key": "AllowCancel",
+        "Param": ""
+      }
+    ]
+  }
+}

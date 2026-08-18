@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdcb3162b2afb04f8817a62d874ffb7, type: 3}
+  m_Name: Projectile_2005
+  m_EditorClassIdentifier: 
+  ProjectileId: 2005
+  ProjectileName: "\u70AE\u8F66\u70AE\u5F39"
+  VfxKey: Vfx_SiegeBolt
+  Width: 0.7
+  Speed: 14.4
+  MaxDistance: 2.8
+  MaxTargets: 1
+  PierceCount: 1
+  BoltCount: 1
+  SpreadDegrees: 0
+  VfxColor: {r: 0.55, g: 0.2, b: 1, a: 1}
+  VfxScale: {x: 0.24, y: 0.24}
+  VfxYLift: 0.8
+  ImpactDelay: 0
+  CollisionShape:
+    ShapeType: 1
+    ShapeSize: {x: 0.35, y: 0, z: 0}
+    Offset: {x: 0, y: 0, z: 0}
+  HitEffect:
+    Damage:
+      BaseDamage: 0
+      Coefficient: 1
+      DamageType: 0
+    TargetBuffs: []
+    KnockbackDistance: 0
+  HitFeedback:
+    AttackType: 
+    CasterFeedbackType: 
+  Impact:
+    AttackType: HeavyBlow
+    CasterFeedbackType: 
+    ShapeHits: []
+  SpawnAreaOnHit: 0
+  GroundArea:
+    Enabled: 1
+    Name: 
+    Anchor:
+      SelectorType: 0
+      Relation: 2
+      SearchRadius: 0
+      MaxTargetCount: 1
+      PositionOffset: {x: 0, y: 0, z: 0}
+      RotationOffset: {x: 0, y: 0, z: 0}
+    Duration: 6
+    TickInterval: 0.5
+    ReplaceSame: 1
+    Shape:
+      ShapeType: 0
+      ShapeSize: {x: 1, y: 1, z: 0}
+      Offset: {x: 0, y: 0, z: 0}
+    TickEffect:
+      Damage:
+        BaseDamage: 0
+        Coefficient: 1
+        DamageType: 0
+      TargetBuffs: []
+      KnockbackDistance: 0
+    TickFeedback:
+      AttackType: 
+      CasterFeedbackType: 

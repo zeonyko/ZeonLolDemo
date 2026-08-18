@@ -1,0 +1,127 @@
+{
+    "Logic": {
+        "IsAutoAttack": true,
+        "SkillId": 11000101,
+        "Name": "近战普攻",
+        "Type": 0,
+        "AllowedTargets": 3,
+        "CastRange": 1.8,
+        "Cooldown": 0.55,
+        "CostMana": 0,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 62,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.18,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.18,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "LightSlash",
+                    "CasterFeedbackType": "Caster_Feedback_LightSlash",
+                    "ShapeHits": [
+                        {
+                            "Name": "",
+                            "Anchor": {
+                                "SelectorType": 0,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "Shape": {
+                                "ShapeType": 0,
+                                "SizeX": 1.8,
+                                "SizeY": 2,
+                                "SizeZ": 0,
+                                "OffsetX": 0,
+                                "OffsetY": 0,
+                                "OffsetZ": 0
+                            },
+                            "Effect": {
+                                "Damage": {
+                                    "BaseDamage": 0,
+                                    "Coefficient": 1,
+                                    "DamageType": 0
+                                }
+                            },
+                            "Feedback": {
+                                "AttackType": "LightSlash",
+                                "CasterFeedbackType": "Caster_Feedback_LightSlash"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 0.18,
+                "Duration": 0.27,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 0.45,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            },
+            {
+                "Time": 0.45,
+                "Duration": 0.5,
+                "Track": 13,
+                "Key": "AllowCancel",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 11000101,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.5,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack1"
+            },
+            {
+                "Time": 0.09,
+                "Duration": 0.18,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Whoosh"
+            },
+            {
+                "Time": 0.18,
+                "Duration": 0.35,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_GroundBox,Foot"
+            },
+            {
+                "Time": 0.18,
+                "Duration": 0.28,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_Slash"
+            }
+        ]
+    }
+}

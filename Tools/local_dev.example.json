@@ -1,0 +1,6 @@
+{
+  "_comment": "init 会生成 Tools/local_dev.json 并填本机 IP。这是提交用的模板。",
+  "check_url": "http://192.168.0.10:8080/version-check",
+  "server_url": "192.168.0.10:8888",
+  "cdn_host": "http://192.168.0.10:8080"
+}

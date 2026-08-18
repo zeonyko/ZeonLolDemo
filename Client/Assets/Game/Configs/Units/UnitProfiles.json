@@ -1,0 +1,101 @@
+{
+    "Profiles": [
+        {
+            "EntityType": 1,
+            "Id": "Player",
+            "Class": "Hero",
+            "MaxHp": 520,
+            "AttackSkillId": 11000101,
+            "MoveSpeed": 5.2
+        },
+        {
+            "EntityType": 2,
+            "Id": "Monster",
+            "Class": "Monster",
+            "MaxHp": 520,
+            "AttackSkillId": 31000101
+        },
+        {
+            "EntityType": 3,
+            "Id": "Boss",
+            "Class": "Monster",
+            "MaxHp": 2000,
+            "AttackSkillId": 31000102
+        },
+        {
+            "EntityType": 4,
+            "Id": "MinionMelee",
+            "Class": "Minion",
+            "MaxHp": 280,
+            "AttackSkillId": 21000101,
+            "MoveSpeed": 2.4,
+            "SuppressHitBodyFeedback": true,
+            "SuppressHitFeedbackSameClass": true,
+            "SuppressCasterFeedback": true
+        },
+        {
+            "EntityType": 5,
+            "Id": "MinionRanged",
+            "Class": "Minion",
+            "MaxHp": 200,
+            "AttackSkillId": 20100201,
+            "MoveSpeed": 2.4,
+            "SuppressHitBodyFeedback": true,
+            "SuppressHitFeedbackSameClass": true,
+            "SuppressCasterFeedback": true
+        },
+        {
+            "EntityType": 8,
+            "Id": "MinionSiege",
+            "Class": "Minion",
+            "MaxHp": 560,
+            "AttackSkillId": 20100301,
+            "MoveSpeed": 2.2,
+            "SuppressHitBodyFeedback": true,
+            "SuppressHitFeedbackSameClass": true,
+            "SuppressCasterFeedback": true
+        },
+        {
+            "EntityType": 10,
+            "Id": "MinionSuper",
+            "Class": "Minion",
+            "MaxHp": 1400,
+            "AttackSkillId": 21000101,
+            "MoveSpeed": 2.4,
+            "SuppressHitBodyFeedback": true,
+            "SuppressHitFeedbackSameClass": true,
+            "SuppressCasterFeedback": true
+        },
+        {
+            "EntityType": 6,
+            "Id": "Tower",
+            "Class": "Structure",
+            "MaxHp": 1500,
+            "AttackSkillId": 40100101,
+            "OnlyAutoAttackDamage": true,
+            "SuppressHitFeedback": true,
+            "SuppressHitBodyFeedback": true,
+            "SuppressCasterFeedback": true
+        },
+        {
+            "EntityType": 7,
+            "Id": "Crystal",
+            "Class": "Structure",
+            "MaxHp": 2800,
+            "OnlyAutoAttackDamage": true,
+            "SuppressHitFeedback": true,
+            "SuppressHitBodyFeedback": true
+        },
+        {
+            "EntityType": 9,
+            "Id": "InnerTower",
+            "Class": "Structure",
+            "MaxHp": 1800,
+            "AttackSkillId": 40100101,
+            "OnlyAutoAttackDamage": true,
+            "SuppressHitFeedback": true,
+            "SuppressHitBodyFeedback": true,
+            "SuppressCasterFeedback": true
+        }
+    ]
+}

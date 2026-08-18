@@ -1,0 +1,102 @@
+{
+    "Logic": {
+        "SkillId": 10110104,
+        "Name": "火焰烙印",
+        "Type": 0,
+        "AllowedTargets": 3,
+        "CastRange": 6.5,
+        "Cooldown": 8,
+        "CostMana": 40,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 52,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.2,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.2,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "Pierce",
+                    "CasterFeedbackType": "",
+                    "ProjectileSpawns": [
+                        {
+                            "ProjectileId": 2101,
+                            "Anchor": {
+                                "SelectorType": 0,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "AngleOffsetX": 0,
+                            "AngleOffsetY": 0,
+                            "AngleOffsetZ": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 0.2,
+                "Duration": 0.3,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 0.5,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            },
+            {
+                "Time": 0.5,
+                "Duration": 0.5,
+                "Track": 13,
+                "Key": "AllowCancel",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 10110104,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.55,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack2"
+            },
+            {
+                "Time": 0.2,
+                "Duration": 0.28,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_Fireball,Hand"
+            },
+            {
+                "Time": 0.2,
+                "Duration": 0.26,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Fire"
+            }
+        ]
+    }
+}

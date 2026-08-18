@@ -1,0 +1,140 @@
+{
+    "Logic": {
+        "SkillId": 11010106,
+        "Name": "野蛮冲撞",
+        "Type": 0,
+        "AllowedTargets": 1,
+        "CastRange": 5.2,
+        "Cooldown": 8,
+        "CostMana": 30,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 72,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.08,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.08,
+                "Duration": 0.05,
+                "Track": 12,
+                "Key": "CommitDash",
+                "Param": "1.15;1;1",
+                "Motion": {
+                    "MotionType": 2,
+                    "Distance": 1.15,
+                    "TargetType": 1,
+                    "CollisionPolicy": 1
+                }
+            },
+            {
+                "Time": 0.22,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "HeavyBlow",
+                    "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+                    "ShapeHits": [
+                        {
+                            "Name": "野蛮冲撞",
+                            "Anchor": {
+                                "SelectorType": 0,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "Shape": {
+                                "ShapeType": 0,
+                                "SizeX": 2.4,
+                                "SizeY": 2.0,
+                                "SizeZ": 0,
+                                "OffsetX": 0,
+                                "OffsetY": 0,
+                                "OffsetZ": 0.7
+                            },
+                            "Effect": {
+                                "Damage": {
+                                    "BaseDamage": 0,
+                                    "Coefficient": 1,
+                                    "DamageType": 0
+                                },
+                                "KnockbackDistance": 3.6
+                            },
+                            "Feedback": {
+                                "AttackType": "HeavyBlow",
+                                "CasterFeedbackType": "Caster_Feedback_HeavyImpact"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 0.22,
+                "Duration": 0.32,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 0.45,
+                "Duration": 0.4,
+                "Track": 13,
+                "Key": "AllowCancel",
+                "Param": ""
+            },
+            {
+                "Time": 0.55,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 11010106,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.6,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack4"
+            },
+            {
+                "Time": 0.08,
+                "Duration": 0.22,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Whoosh"
+            },
+            {
+                "Time": 0.08,
+                "Duration": 0.35,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_Blink,Foot"
+            },
+            {
+                "Time": 0.22,
+                "Duration": 0.24,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Impact"
+            }
+        ]
+    }
+}

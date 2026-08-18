@@ -1,0 +1,14 @@
+{
+    "Views": [
+        { "EntityType": 1, "PrefabKey": "Prefabs/Heroes/Hero_01" },
+        { "EntityType": 2, "PrefabKey": "Prefabs/Monsters/Monster" },
+        { "EntityType": 3, "PrefabKey": "Prefabs/Monsters/Boss" },
+        { "EntityType": 4, "PrefabKey": "Prefabs/Minions/Minion_Melee" },
+        { "EntityType": 5, "PrefabKey": "Prefabs/Minions/Minion_Ranged" },
+        { "EntityType": 8, "PrefabKey": "Prefabs/Minions/Minion_Siege" },
+        { "EntityType": 10, "PrefabKey": "Prefabs/Minions/Minion_Super" },
+        { "EntityType": 6, "PrefabKey": "Prefabs/Towers/Tower" },
+        { "EntityType": 7, "PrefabKey": "Prefabs/Crystals/Crystal" },
+        { "EntityType": 9, "PrefabKey": "Prefabs/Towers/Tower" }
+    ]
+}

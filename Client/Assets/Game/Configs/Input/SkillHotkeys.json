@@ -1,0 +1,22 @@
+{
+    "Entries": [
+        { "Hotkey": "Q", "SkillId": 10110104, "Label": "火焰烙印", "AnchorX": -460, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "W", "SkillId": 11010105, "Label": "旋风斩击", "AnchorX": -378, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "E", "SkillId": 11010106, "Label": "野蛮冲撞", "AnchorX": -296, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "R", "SkillId": 11010107, "Label": "狂风绝息", "AnchorX": -214, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "T", "SkillId": 10110110, "Label": "万箭齐发", "AnchorX": -132, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "Y", "SkillId": 11010109, "Label": "残虐猛击", "AnchorX": -50, "AnchorY": -50, "Size": 72 },
+        { "Hotkey": "H", "SkillId": 11010206, "Label": "精准弹幕", "AnchorX": -460, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "X", "SkillId": 11010201, "Label": "暗影突袭", "AnchorX": -378, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "C", "SkillId": 11010202, "Label": "终极闪光", "AnchorX": -296, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "V", "SkillId": 11010203, "Label": "缠绕之根", "AnchorX": -214, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "B", "SkillId": 11010204, "Label": "坚毅咏叹", "AnchorX": -132, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "N", "SkillId": 11010205, "Label": "致命打击", "AnchorX": -50, "AnchorY": -132, "Size": 72 },
+        { "Hotkey": "A", "SkillId": 11000101, "Label": "近战普攻", "AnchorX": -460, "AnchorY": -214, "Size": 72, "TintR": 0.9, "TintG": 0.5, "TintB": 0.18, "TintA": 0.92 },
+        { "Hotkey": "Z", "SkillId": 10100103, "Label": "远程普攻", "AnchorX": -378, "AnchorY": -214, "Size": 72, "TintR": 0.35, "TintG": 0.7, "TintB": 0.95, "TintA": 0.92 },
+        { "Hotkey": "S", "SkillId": 0, "Label": "打断", "AnchorX": -296, "AnchorY": -214, "Size": 72, "TintR": 0.75, "TintG": 0.28, "TintB": 0.28, "TintA": 0.92 },
+        { "Hotkey": "D", "SkillId": 10000102, "Label": "闪现", "AnchorX": -214, "AnchorY": -214, "Size": 72, "TintR": 0.22, "TintG": 0.52, "TintB": 0.9, "TintA": 0.92 },
+        { "Hotkey": "F", "SkillId": 11010108, "Label": "冰川风暴", "AnchorX": -132, "AnchorY": -214, "Size": 72 },
+        { "Hotkey": "G", "SkillId": 11010111, "Label": "星辰凝滞", "AnchorX": -50, "AnchorY": -214, "Size": 72 }
+    ]
+}

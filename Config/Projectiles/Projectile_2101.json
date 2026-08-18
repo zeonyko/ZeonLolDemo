@@ -1,0 +1,178 @@
+{
+  "Logic": {
+    "HasImpact": true,
+    "ImpactRadius": 2.6,
+    "ProjectileId": 2101,
+    "Name": "爆裂火球",
+    "Width": 0.85,
+    "Speed": 9.5,
+    "MaxDistance": 6.8,
+    "MaxTargets": 1,
+    "PierceCount": 1,
+    "BoltCount": 1,
+    "SpreadDegrees": 0,
+    "VfxKey": "",
+    "VfxColorR": 1,
+    "VfxColorG": 0.4,
+    "VfxColorB": 0.1,
+    "VfxColorA": 0.95,
+    "VfxScaleX": 0.5,
+    "VfxScaleY": 0.5,
+    "VfxYLift": 0,
+    "ImpactDelay": 0.9,
+    "CollisionShape": {
+      "Type": 1,
+      "ShapeType": 1,
+      "SizeX": 0.4,
+      "SizeY": 0,
+      "SizeZ": 0,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "OffsetZ": 0
+    },
+    "HitEffect": {
+      "Damage": {
+        "Type": 0,
+        "BaseDamage": 0,
+        "Coefficient": 0.35,
+        "DamageType": 0
+      },
+      "TargetBuffs": [
+        {
+          "TargetRelation": 2,
+          "BuffId": 3006,
+          "Chance": 1,
+          "Relation": 2,
+          "RequireStatusFlags": 0,
+          "OverrideDuration": 3.2
+        }
+      ]
+    },
+    "HitFeedback": {
+      "AttackType": "Pierce",
+      "CasterFeedbackType": "Caster_Feedback_Pierce"
+    },
+    "Impact": {
+      "HasContent": true,
+      "AttackType": "HeavyBlow",
+      "CasterFeedbackType": "Caster_Feedback_HeavyImpact",
+      "ShapeHits": [
+        {
+          "HasShape": true,
+          "Name": "火球爆炸",
+          "Anchor": {
+            "Type": 2,
+            "TargetRelation": 2,
+            "SelectorType": 2,
+            "Relation": 2,
+            "SearchRadius": 0,
+            "MaxTargetCount": 1,
+            "PositionOffsetX": 0,
+            "PositionOffsetY": 0,
+            "PositionOffsetZ": 0,
+            "RotationOffsetX": 0,
+            "RotationOffsetY": 0,
+            "RotationOffsetZ": 0
+          },
+          "Shape": {
+            "Type": 1,
+            "ShapeType": 1,
+            "SizeX": 3.2,
+            "SizeY": 0,
+            "SizeZ": 0,
+            "OffsetX": 0,
+            "OffsetY": 0,
+            "OffsetZ": 0
+          },
+          "Effect": {
+            "Damage": {
+              "Type": 0,
+              "BaseDamage": 0,
+              "Coefficient": 0.95,
+              "DamageType": 0
+            },
+            "TargetBuffs": [
+              {
+                "TargetRelation": 2,
+                "BuffId": 3006,
+                "Chance": 1,
+                "Relation": 2,
+                "RequireStatusFlags": 0,
+                "OverrideDuration": 3.2
+              }
+            ]
+          },
+          "Feedback": {
+            "AttackType": "HeavyBlow",
+            "CasterFeedbackType": "Caster_Feedback_HeavyImpact"
+          }
+        }
+      ]
+    },
+    "SpawnAreaOnHit": true,
+    "GroundArea": {
+      "HasContent": true,
+      "Name": "灼烧地带",
+      "Anchor": {
+        "Type": 2,
+        "TargetRelation": 2,
+        "SelectorType": 2,
+        "Relation": 2,
+        "SearchRadius": 0,
+        "MaxTargetCount": 1,
+        "PositionOffsetX": 0,
+        "PositionOffsetY": 0,
+        "PositionOffsetZ": 0,
+        "RotationOffsetX": 0,
+        "RotationOffsetY": 0,
+        "RotationOffsetZ": 0
+      },
+      "Duration": 4.4,
+      "TickInterval": 0.4,
+      "ReplaceSame": true,
+      "Shape": {
+        "Type": 1,
+        "ShapeType": 1,
+        "SizeX": 3.0,
+        "SizeY": 0,
+        "SizeZ": 0,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "OffsetZ": 0
+      },
+      "TickEffect": {
+        "Damage": {
+          "Type": 0,
+          "BaseDamage": 0,
+          "Coefficient": 0.18,
+          "DamageType": 0
+        },
+        "TargetBuffs": [
+          {
+            "TargetRelation": 2,
+            "BuffId": 3006,
+            "Chance": 1,
+            "Relation": 2,
+            "RequireStatusFlags": 0,
+            "OverrideDuration": 3.2
+          }
+        ]
+      },
+                    "TickFeedback": {
+                        "AttackType": "Unit",
+                        "CasterFeedbackType": ""
+                    }
+    }
+  },
+  "Presentation": {
+    "ProjectileId": 2101,
+    "VfxKey": "Vfx_Fireball",
+    "VfxColorR": 1,
+    "VfxColorG": 0.35,
+    "VfxColorB": 0.08,
+    "VfxColorA": 1,
+    "VfxScaleX": 1.05,
+    "VfxScaleY": 1.05,
+    "VfxYLift": 1
+  }
+}

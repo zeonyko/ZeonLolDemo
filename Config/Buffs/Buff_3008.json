@@ -1,0 +1,50 @@
+{
+  "Logic": {
+    "Kind": 3,
+    "ValueSrc": 0,
+    "BuffType": 1,
+    "BuffStackType": 0,
+    "Attach": 1,
+    "BuffId": 3008,
+    "Name": "\u62A4\u76FE\u7ED3\u754C",
+    "Type": 1,
+    "DefaultDuration": 4.5,
+    "StackType": 0,
+    "MaxStacks": 1,
+    "StatusFlags": 64,
+    "AttributeModifiers": [
+      {
+        "Attribute": 2,
+        "Operation": 1,
+        "Value": 0.18
+      }
+    ],
+    "TickInterval": 0,
+    "PeriodDamage": 0,
+    "EffectKind": 3,
+    "ValueSource": 0,
+    "LoopVfxKey": "",
+    "AttachPoint": 1,
+    "TintR": 1,
+    "TintG": 1,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  },
+  "Presentation": {
+    "Attach": 3,
+    "BuffId": 3008,
+    "LoopVfxKey": "Vfx_SuperArmor",
+    "AttachPoint": 3,
+    "TintR": 0.45,
+    "TintG": 0.85,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0.45,
+    "AnimSpeedMultiplier": 1,
+    "LoopScale": 1.15,
+    "PlaybackId": ""
+  }
+}

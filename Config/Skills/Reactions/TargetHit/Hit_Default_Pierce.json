@@ -1,0 +1,31 @@
+{
+    "ReactionId":  "Hit_Default_Pierce",
+    "Duration":  0.35,
+    "HitStop":  0.04,
+    "Actions":  [
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_HitPierce",
+                        "Duration":  0.35
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_DamageFloat,Head,0,0.35,0",
+                        "Duration":  0.35
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Anim",
+                        "Param":  "HitReact",
+                        "Duration":  0.25
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Audio",
+                        "Param":  "Sfx_Hit_Pierce",
+                        "Duration":  0.12
+                    }
+                ]
+}

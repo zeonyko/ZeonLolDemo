@@ -1,0 +1,24 @@
+{
+    "name": "Game.Launch",
+    "rootNamespace": "Launch",
+    "references": [
+        "Game.ZeonAsset",
+        "HybridCLR.Runtime",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.code-philosophy.hybridclr",
+            "expression": "",
+            "define": "HYBRIDCLR"
+        }
+    ],
+    "noEngineReferences": false
+}

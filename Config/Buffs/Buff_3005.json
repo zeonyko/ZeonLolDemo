@@ -1,0 +1,43 @@
+{
+  "Logic": {
+    "Kind": 3,
+    "ValueSrc": 0,
+    "BuffType": 0,
+    "BuffStackType": 0,
+    "Attach": 1,
+    "BuffId": 3005,
+    "Name": "\u6C89\u9ED8",
+    "Type": 0,
+    "DefaultDuration": 2.5,
+    "StackType": 0,
+    "MaxStacks": 1,
+    "StatusFlags": 4,
+    "AttributeModifiers": [],
+    "TickInterval": 0,
+    "PeriodDamage": 0,
+    "EffectKind": 3,
+    "ValueSource": 0,
+    "LoopVfxKey": "",
+    "AttachPoint": 1,
+    "TintR": 1,
+    "TintG": 1,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  },
+  "Presentation": {
+    "Attach": 2,
+    "BuffId": 3005,
+    "LoopVfxKey": "",
+    "AttachPoint": 2,
+    "TintR": 0.7,
+    "TintG": 0.5,
+    "TintB": 0.9,
+    "TintA": 1,
+    "TintStrength": 0.3,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  }
+}

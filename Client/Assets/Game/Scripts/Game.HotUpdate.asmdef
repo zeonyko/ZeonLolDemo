@@ -1,0 +1,18 @@
+{
+    "name": "Game.HotUpdate",
+    "rootNamespace": "",
+    "references": [
+        "Game.Launch",
+        "Game.ZeonAsset",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

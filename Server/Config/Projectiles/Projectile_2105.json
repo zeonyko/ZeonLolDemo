@@ -1,0 +1,50 @@
+{
+  "Logic": {
+    "HasImpact": false,
+    "ImpactRadius": 0,
+    "ProjectileId": 2105,
+    "Name": "精准弹幕",
+    "Width": 1.1,
+    "Speed": 18,
+    "MaxDistance": 52,
+    "MaxTargets": 20,
+    "PierceCount": 20,
+    "BoltCount": 1,
+    "SpreadDegrees": 0,
+    "VfxKey": "",
+    "VfxColorR": 0.35,
+    "VfxColorG": 0.75,
+    "VfxColorB": 1,
+    "VfxColorA": 0.95,
+    "VfxScaleX": 0.7,
+    "VfxScaleY": 0.7,
+    "VfxYLift": 0,
+    "ImpactDelay": 0,
+    "CollisionShape": {
+      "Type": 1,
+      "ShapeType": 1,
+      "SizeX": 0.55,
+      "SizeY": 0,
+      "SizeZ": 0,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "OffsetZ": 0
+    },
+    "HitEffect": {
+      "Damage": {
+        "Type": 0,
+        "BaseDamage": 0,
+        "Coefficient": 1,
+        "DamageType": 1
+      },
+      "TargetBuffs": []
+    },
+    "HitFeedback": {
+      "AttackType": "Pierce",
+      "CasterFeedbackType": "Caster_Feedback_Pierce"
+    },
+    "Impact": null,
+    "SpawnAreaOnHit": false,
+    "GroundArea": null
+  }
+}

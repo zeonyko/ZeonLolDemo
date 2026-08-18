@@ -1,0 +1,9 @@
+{
+    "MapId": "HowlingAbyss",
+    "MinionMoveSpeed": 2.4,
+    "MinionAggroRange": 5.2,
+    "TowerAttackRange": 9,
+    "TowerScanInterval": 0.15,
+    "MinionWaveInterval": 24,
+    "MinionSpawnInterval": 0.45
+}

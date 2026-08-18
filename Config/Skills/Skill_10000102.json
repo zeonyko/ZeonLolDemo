@@ -1,0 +1,95 @@
+{
+    "Logic": {
+        "SkillId": 10000102,
+        "Name": "闪现",
+        "Type": 0,
+        "AllowedTargets": 3,
+        "CastRange": 0,
+        "Cooldown": 1.5,
+        "CostMana": 0,
+        "CanCastInStun": true,
+        "OrientToTargetOnCast": false,
+        "Damage": 0,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.12,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.12,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "",
+                    "CasterFeedbackType": ""
+                }
+            },
+            {
+                "Time": 0.12,
+                "Duration": 0.23,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 0.12,
+                "Duration": 0.05,
+                "Track": 12,
+                "Key": "CommitBlink",
+                    "Param": "4.5;0;0",
+                    "Motion": {
+                        "MotionType": 1,
+                        "Distance": 4.5,
+                    "TargetType": 0,
+                    "CollisionPolicy": 0
+                }
+            },
+            {
+                "Time": 0.35,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            },
+            {
+                "Time": 0.35,
+                "Duration": 0.5,
+                "Track": 13,
+                "Key": "AllowCancel",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 10000102,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.4,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack3"
+            },
+            {
+                "Time": 0.12,
+                "Duration": 0.3,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_Blink,Foot"
+            },
+            {
+                "Time": 0.12,
+                "Duration": 0.2,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Blink"
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "Logic": {
+    "IsAutoAttack": true,
+    "SkillId": 10100103,
+    "Name": "远程普攻",
+    "Type": 0,
+    "AllowedTargets": 3,
+    "CastRange": 4.5,
+    "Cooldown": 0.7,
+    "CostMana": 0,
+    "CanCastInStun": false,
+    "OrientToTargetOnCast": true,
+    "Damage": 55,
+    "Clips": [
+      {
+        "Time": 0,
+        "Duration": 0.12,
+        "Track": 10,
+        "Key": "Windup",
+        "Param": ""
+      },
+      {
+        "Time": 0.12,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "Pierce",
+          "CasterFeedbackType": "Caster_Feedback_Pierce",
+          "ProjectileSpawns": [
+            {
+              "ProjectileId": 2003,
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "AngleOffsetX": 0,
+              "AngleOffsetY": 0,
+              "AngleOffsetZ": 0
+            }
+          ]
+        }
+      },
+      {
+        "Time": 0.12,
+        "Duration": 0.28,
+        "Track": 10,
+        "Key": "Recovery",
+        "Param": ""
+      },
+      {
+        "Time": 0.4,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "End",
+        "Param": ""
+      },
+      {
+        "Time": 0.4,
+        "Duration": 0.5,
+        "Track": 13,
+        "Key": "AllowCancel",
+        "Param": ""
+      }
+    ]
+  }
+}

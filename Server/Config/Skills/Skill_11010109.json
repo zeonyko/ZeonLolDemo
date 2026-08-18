@@ -1,0 +1,135 @@
+{
+  "Logic": {
+    "SkillId": 11010109,
+    "Name": "残虐猛击",
+    "Type": 2,
+    "AllowedTargets": 3,
+    "CastRange": 4.6,
+    "Cooldown": 10,
+    "CostMana": 35,
+    "CanCastInStun": false,
+    "OrientToTargetOnCast": true,
+    "Damage": 105,
+    "Clips": [
+      {
+        "Time": 0,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "ChargeStart",
+        "Param": ""
+      },
+      {
+        "Time": 0,
+        "Duration": 1.0,
+        "Track": 10,
+        "Key": "Windup",
+        "Param": ""
+      },
+      {
+        "Time": 0,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "",
+          "CasterFeedbackType": "",
+          "CasterBuffs": [
+            {
+              "BuffId": 3007,
+              "Chance": 1,
+              "Relation": 0,
+              "RequireStatusFlags": 0,
+              "OverrideDuration": 2.5
+            }
+          ]
+        }
+      },
+      {
+        "Time": 1.0,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "Hit",
+        "Param": "",
+        "Hit": {
+          "AttackType": "Pierce",
+          "CasterFeedbackType": "Caster_Feedback_Pierce",
+          "ShapeHits": [
+            {
+              "Name": "蓄力重击范围",
+              "Anchor": {
+                "SelectorType": 0,
+                "Relation": 2,
+                "SearchRadius": 0,
+                "MaxTargetCount": 1,
+                "PositionOffsetX": 0,
+                "PositionOffsetY": 0,
+                "PositionOffsetZ": 0,
+                "RotationOffsetX": 0,
+                "RotationOffsetY": 0,
+                "RotationOffsetZ": 0
+              },
+              "Shape": {
+                "ShapeType": 0,
+                "SizeX": 4.6,
+                "SizeY": 2.2,
+                "SizeZ": 0,
+                "OffsetX": 0,
+                "OffsetY": 0,
+                "OffsetZ": 0
+              },
+              "Effect": {
+                "Damage": {
+                  "BaseDamage": 0,
+                  "Coefficient": 1.5,
+                  "DamageType": 0
+                },
+                "TargetBuffs": [
+                  {
+                    "BuffId": 3003,
+                    "Chance": 1,
+                    "Relation": 2,
+                    "RequireStatusFlags": 0,
+                    "OverrideDuration": 2
+                  }
+                ]
+              },
+              "Feedback": {
+                "AttackType": "Pierce",
+                "CasterFeedbackType": "Caster_Feedback_Pierce"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Time": 1.0,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "ChargeRelease",
+        "Param": ""
+      },
+      {
+        "Time": 1.0,
+        "Duration": 0.3,
+        "Track": 10,
+        "Key": "Recovery",
+        "Param": ""
+      },
+      {
+        "Time": 1.3,
+        "Duration": 0.05,
+        "Track": 10,
+        "Key": "End",
+        "Param": ""
+      },
+      {
+        "Time": 1.3,
+        "Duration": 0.4,
+        "Track": 13,
+        "Key": "AllowCancel",
+        "Param": ""
+      }
+    ]
+  }
+}

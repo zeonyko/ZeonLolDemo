@@ -1,0 +1,30 @@
+{
+  "Version": 2,
+  "DefaultSurface": "Stone",
+  "UsePhysicsRaycast": true,
+  "RaycastUp": 2.0,
+  "RaycastDistance": 6.0,
+  "Rules": [
+    { "MinAcross": -2.2, "MaxAcross": 2.2, "Surface": "Stone" },
+    { "MinAcross": -6.0, "MaxAcross": -2.2, "Surface": "Grass" },
+    { "MinAcross": 2.2, "MaxAcross": 6.0, "Surface": "Grass" },
+    { "MinAcross": -9.5, "MaxAcross": -6.0, "Surface": "Water" },
+    { "MinAcross": 6.0, "MaxAcross": 9.5, "Surface": "Water" }
+  ],
+  "TagMappings": [
+    { "Contains": "Water", "Surface": "Water" },
+    { "Contains": "Grass", "Surface": "Grass" },
+    { "Contains": "Stone", "Surface": "Stone" },
+    { "Contains": "Ground", "Surface": "Stone" }
+  ],
+  "MaterialNameMappings": [
+    { "Contains": "Water", "Surface": "Water" },
+    { "Contains": "River", "Surface": "Water" },
+    { "Contains": "Grass", "Surface": "Grass" },
+    { "Contains": "Leaf", "Surface": "Grass" },
+    { "Contains": "Stone", "Surface": "Stone" },
+    { "Contains": "Rock", "Surface": "Stone" },
+    { "Contains": "Road", "Surface": "Stone" },
+    { "Contains": "Dirt", "Surface": "Stone" }
+  ]
+}

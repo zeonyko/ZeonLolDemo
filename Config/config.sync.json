@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "comment": "权威源均在 Config/ 根目录。client/server 列决定同步策略，不是再拆一份源文件。",
+    "targets": {
+        "client": "../Client/Assets/Game/Configs",
+        "server": "../Server/Config"
+    },
+    "entries": [
+        {
+            "comment": "单位逻辑 — 双端一致",
+            "src": "Units/UnitProfiles.json",
+            "client": "copy",
+            "server": "copy"
+        },
+        {
+            "comment": "单位外观 PrefabKey — 仅客户端",
+            "src": "Units/UnitViewProfiles.json",
+            "client": "copy",
+            "server": "skip"
+        },
+        {
+            "comment": "技能主表 — 客户端双键；服务端去 Presentation",
+            "src": "Skills/Skill_*.json",
+            "client": "copy",
+            "server": "logicOnly"
+        },
+        {
+            "comment": "受击/出手反馈 Timeline JSON — 仅客户端",
+            "src": "Skills/Reactions/**",
+            "client": "copy",
+            "server": "skip"
+        },
+        {
+            "comment": "Buff — 客户端双键；服务端去 Presentation",
+            "src": "Buffs/Buff_*.json",
+            "client": "copy",
+            "server": "logicOnly"
+        },
+        {
+            "comment": "弹道 — 客户端双键；服务端去 Presentation",
+            "src": "Projectiles/Projectile_*.json",
+            "client": "copy",
+            "server": "logicOnly"
+        },
+        {
+            "comment": "地图战斗 / 碰撞 — 双端一致",
+            "src": "Maps/**",
+            "client": "copy",
+            "server": "copy"
+        },
+        {
+            "comment": "飘字 / 字体 / VFX 别名 — 仅客户端",
+            "src": "Presentation/**",
+            "client": "copy",
+            "server": "skip"
+        },
+        {
+            "comment": "技能热键 — 仅客户端",
+            "src": "Input/**",
+            "client": "copy",
+            "server": "skip"
+        }
+    ]
+}

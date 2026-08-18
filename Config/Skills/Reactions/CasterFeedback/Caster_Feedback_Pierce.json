@@ -1,0 +1,13 @@
+{
+    "ReactionId":  "Caster_Feedback_Pierce",
+    "Duration":  0.1,
+    "HitStop":  0.03,
+    "Actions":  [
+                    {
+                        "Time":  0,
+                        "Type":  "Audio",
+                        "Param":  "Sfx_Hit_Pierce",
+                        "Duration":  0.1
+                    }
+                ]
+}

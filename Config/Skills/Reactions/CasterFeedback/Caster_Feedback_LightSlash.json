@@ -1,0 +1,25 @@
+{
+    "ReactionId": "Caster_Feedback_LightSlash",
+    "Duration": 0.12,
+    "HitStop": 0.025,
+    "Actions": [
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_Slash",
+            "Duration": 0.2
+        },
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_HitLight",
+            "Duration": 0.16
+        },
+        {
+            "Time": 0,
+            "Type": "Audio",
+            "Param": "Sfx_Hit_Light",
+            "Duration": 0.08
+        }
+    ]
+}

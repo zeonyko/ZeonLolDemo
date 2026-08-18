@@ -1,0 +1,30 @@
+{
+  "Logic": {
+    "Kind": 2,
+    "ValueSrc": 1,
+    "BuffType": 0,
+    "BuffStackType": 0,
+    "Attach": 1,
+    "BuffId": 1002,
+    "Name": "周期伤害",
+    "Type": 0,
+    "DefaultDuration": 3,
+    "StackType": 0,
+    "MaxStacks": 1,
+    "StatusFlags": 0,
+    "AttributeModifiers": [],
+    "TickInterval": 0.5,
+    "PeriodDamage": 0,
+    "EffectKind": 2,
+    "ValueSource": 1,
+    "LoopVfxKey": "",
+    "AttachPoint": 1,
+    "TintR": 1,
+    "TintG": 1,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Logic": {
+    "Kind": 3,
+    "ValueSrc": 0,
+    "BuffType": 0,
+    "BuffStackType": 0,
+    "Attach": 1,
+    "BuffId": 3002,
+    "Name": "减速",
+    "Type": 0,
+    "DefaultDuration": 2.5,
+    "StackType": 0,
+    "MaxStacks": 1,
+    "StatusFlags": 8,
+    "AttributeModifiers": [
+      {
+        "Attribute": 0,
+        "Operation": 1,
+        "Value": -0.3
+      }
+    ],
+    "TickInterval": 0,
+    "PeriodDamage": 0,
+    "EffectKind": 3,
+    "ValueSource": 0,
+    "LoopVfxKey": "",
+    "AttachPoint": 1,
+    "TintR": 1,
+    "TintG": 1,
+    "TintB": 1,
+    "TintA": 1,
+    "TintStrength": 0,
+    "AnimSpeedMultiplier": 1,
+    "PlaybackId": ""
+  }
+}

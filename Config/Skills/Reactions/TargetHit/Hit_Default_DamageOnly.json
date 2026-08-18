@@ -1,0 +1,19 @@
+{
+    "ReactionId": "Hit_Default_DamageOnly",
+    "Duration": 0.25,
+    "HitStop": 0.02,
+    "Actions": [
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_HitLight",
+            "Duration": 0.22
+        },
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_DamageFloat,Head,0,0.35,0",
+            "Duration": 0.25
+        }
+    ]
+}

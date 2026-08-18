@@ -1,0 +1,61 @@
+{
+  "Logic": {
+    "HasImpact": false,
+    "ImpactRadius": 0,
+    "ProjectileId": 2006,
+    "Name": "\u9632\u5FA1\u5854\u5149\u675F",
+    "Width": 0.55,
+    "Speed": 18.4,
+    "MaxDistance": 10,
+    "MaxTargets": 1,
+    "PierceCount": 1,
+    "BoltCount": 1,
+    "SpreadDegrees": 0,
+    "VfxKey": "",
+    "VfxColorR": 0.9,
+    "VfxColorG": 0.9,
+    "VfxColorB": 1,
+    "VfxColorA": 0.9,
+    "VfxScaleX": 0.4,
+    "VfxScaleY": 0.4,
+    "VfxYLift": 0,
+    "ImpactDelay": 0,
+    "CollisionShape": {
+      "Type": 1,
+      "ShapeType": 1,
+      "SizeX": 0.275,
+      "SizeY": 0,
+      "SizeZ": 0,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "OffsetZ": 0
+    },
+    "HitEffect": {
+      "Damage": {
+        "Type": 0,
+        "BaseDamage": 0,
+        "Coefficient": 1,
+        "DamageType": 0
+      },
+      "TargetBuffs": []
+    },
+    "HitFeedback": {
+      "AttackType": "",
+      "CasterFeedbackType": ""
+    },
+    "Impact": null,
+    "SpawnAreaOnHit": false,
+    "GroundArea": null
+  },
+  "Presentation": {
+    "ProjectileId": 2006,
+    "VfxKey": "Vfx_TowerBolt",
+    "VfxColorR": 0.45,
+    "VfxColorG": 0.15,
+    "VfxColorB": 1,
+    "VfxColorA": 1,
+    "VfxScaleX": 0.16,
+    "VfxScaleY": 0.16,
+    "VfxYLift": 0.9
+  }
+}

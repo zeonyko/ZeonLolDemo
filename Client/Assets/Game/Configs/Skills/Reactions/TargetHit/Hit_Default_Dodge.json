@@ -1,0 +1,19 @@
+{
+    "ReactionId":  "Hit_Default_Dodge",
+    "Duration":  0.2,
+    "HitStop":  0,
+    "Actions":  [
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_Hit",
+                        "Duration":  0.2
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Anim",
+                        "Param":  "HitReact",
+                        "Duration":  0.15
+                    }
+                ]
+}

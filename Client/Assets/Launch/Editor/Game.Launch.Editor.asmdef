@@ -1,0 +1,27 @@
+{
+    "name": "Game.Launch.Editor",
+    "rootNamespace": "Launch.Editor",
+    "references": [
+        "Game.Launch",
+        "Game.ZeonAsset",
+        "Game.ZeonAsset.Editor",
+        "HybridCLR.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.code-philosophy.hybridclr",
+            "expression": "",
+            "define": "HYBRIDCLR"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,67 @@
+{
+    "ReactionId": "Hit_Default_KnockUp",
+    "Duration": 1.1,
+    "HitStop": 0.1,
+    "Actions": [
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_HitHeavy",
+            "Duration": 1.1
+        },
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_DamageFloat,Head,0,0.45,0",
+            "Duration": 1.1
+        },
+        {
+            "Time": 0,
+            "Type": "Anim",
+            "Param": "HitReact",
+            "Duration": 0.55
+        },
+        {
+            "Time": 0,
+            "Type": "Airborne",
+            "Param": "2.2,0.9",
+            "Duration": 0.9
+        },
+        {
+            "Time": 0,
+            "Type": "StatusPopup",
+            "Param": "击飞,1,0.7,0.3,1",
+            "Duration": 0.5
+        },
+        {
+            "Time": 0,
+            "Type": "Displacement",
+            "Param": "2.4",
+            "Duration": 0.08
+        },
+        {
+            "Time": 0,
+            "Type": "Camera",
+            "Param": "Shake_Heavy",
+            "Duration": 0.18
+        },
+        {
+            "Time": 0,
+            "Type": "Audio",
+            "Param": "Sfx_Hit_Heavy",
+            "Duration": 0.18
+        },
+        {
+            "Time": 0.9,
+            "Type": "Vfx",
+            "Param": "Vfx_ImpactBurst",
+            "Duration": 0.45
+        },
+        {
+            "Time": 0.9,
+            "Type": "Audio",
+            "Param": "Sfx_Impact",
+            "Duration": 0.24
+        }
+    ]
+}

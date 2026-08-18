@@ -1,0 +1,100 @@
+{
+    "Logic": {
+        "IsAutoAttack": true,
+        "SkillId": 31000102,
+        "Name": "Boss普攻",
+        "Type": 0,
+        "AllowedTargets": 3,
+        "CastRange": 2.4,
+        "Cooldown": 1.4,
+        "CostMana": 0,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 80,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.28,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 0.28,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "HeavyBlow",
+                    "CasterFeedbackType": "",
+                    "ShapeHits": [
+                        {
+                            "Name": "",
+                            "Anchor": {
+                                "SelectorType": 0,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "Shape": {
+                                "ShapeType": 0,
+                                "SizeX": 2.4,
+                                "SizeY": 2.0,
+                                "SizeZ": 0,
+                                "OffsetX": 0,
+                                "OffsetY": 0,
+                                "OffsetZ": 0
+                            },
+                            "Effect": {
+                                "Damage": {
+                                    "BaseDamage": 0,
+                                    "Coefficient": 1,
+                                    "DamageType": 0
+                                }
+                            },
+                            "Feedback": {
+                                "AttackType": "HeavyBlow",
+                                "CasterFeedbackType": ""
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 0.28,
+                "Duration": 0.3,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 0.6,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 31000102,
+        "SuppressCastBurst": true,
+        "DefaultAnimKey": "Attack2",
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.55,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack2"
+            }
+        ]
+    }
+}

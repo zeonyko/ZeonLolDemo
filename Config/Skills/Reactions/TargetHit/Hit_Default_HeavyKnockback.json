@@ -1,0 +1,43 @@
+{
+    "ReactionId":  "Hit_Default_HeavyKnockback",
+    "Duration":  0.5,
+    "HitStop":  0.06,
+    "Actions":  [
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_HitHeavy",
+                        "Duration":  0.5
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Vfx",
+                        "Param":  "Vfx_DamageFloat,Head,0,0.35,0",
+                        "Duration":  0.5
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Anim",
+                        "Param":  "HitReact",
+                        "Duration":  0.4
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Displacement",
+                        "Param":  "1.2",
+                        "Duration":  0.05
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Camera",
+                        "Param":  "Shake_Light",
+                        "Duration":  0.1
+                    },
+                    {
+                        "Time":  0,
+                        "Type":  "Audio",
+                        "Param":  "Sfx_Hit_Heavy",
+                        "Duration":  0.18
+                    }
+                ]
+}

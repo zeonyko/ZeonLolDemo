@@ -1,0 +1,9 @@
+{
+  "Version": 1,
+  "PreferredFontResource": "",
+  "OsFontFallbacks": [ "Segoe UI", "Microsoft YaHei", "Arial", "Helvetica" ],
+  "FontSize": 48,
+  "MaterialResource": "Materials/mat_combat_text_outline",
+  "OutlineWidth": 0.028,
+  "Notes": "描边材质在 Assets/Game/Materials/mat_combat_text_outline。字体默认走 OsFontFallbacks；可选自定义字体放到 Assets/Game 下并填 PreferredFontResource（相对路径、无扩展名）。"
+}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f3c91e4b2d8045a1e6f0c8d9b35e27, type: 3}
+  m_Name: Buff_3007
+  m_EditorClassIdentifier: 
+  BuffId: 3007
+  BuffName: "\u9738\u4F53"
+  Type: 1
+  DefaultDuration: 1.2
+  StackType: 0
+  MaxStacks: 1
+  StatusFlags: 64
+  AttributeModifiers: []
+  TickInterval: 0
+  PeriodDamage: 0
+  EffectKind: 3
+  ValueSource: 0
+  LoopVfxKey: Vfx_SuperArmor
+  AttachPoint: 3
+  TintColor: {r: 0.95, g: 0.85, b: 0.4, a: 1}
+  TintStrength: 0.35
+  AnimSpeedMultiplier: 1
+  LoopScale: 1
+  PlaybackId: 

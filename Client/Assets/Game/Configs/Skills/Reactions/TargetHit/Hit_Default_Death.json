@@ -1,0 +1,31 @@
+{
+    "ReactionId": "Hit_Default_Death",
+    "Duration": 1.6,
+    "HitStop": 0.08,
+    "Actions": [
+        {
+            "Time": 0,
+            "Type": "Anim",
+            "Param": "Die",
+            "Duration": 1.5
+        },
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_Hit",
+            "Duration": 0.5
+        },
+        {
+            "Time": 0,
+            "Type": "Vfx",
+            "Param": "Vfx_DamageFloat,Head,0,0.35,0",
+            "Duration": 0.6
+        },
+        {
+            "Time": 0,
+            "Type": "Camera",
+            "Param": "Shake_Heavy",
+            "Duration": 0.18
+        }
+    ]
+}

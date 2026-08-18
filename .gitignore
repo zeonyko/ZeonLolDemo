@@ -1,0 +1,176 @@
+# ZeonLolDemo：Unity 客户端 + .NET 服务端
+# Unity 工程在 Client/；Server/ Shared/ 的 .csproj 需要入库，不要全局忽略 *.csproj
+
+# ---------------------------------------------------------------------------
+# OS / 编辑器
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# IDE
+# ---------------------------------------------------------------------------
+.vs/
+# 仓库根若有共享 VS Code 配置可例外放行；Unity 工程下的本机配置一律不提交
+**/.vscode/
+Client/.vscode/
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ---------------------------------------------------------------------------
+# Unity 客户端（Client/）
+# ---------------------------------------------------------------------------
+Client/[Ll]ibrary/
+Client/[Tt]emp/
+Client/[Oo]bj/
+Client/[Bb]uild/
+Client/[Bb]uilds/
+Client/[Ll]ogs/
+Client/[Uu]ser[Ss]ettings/
+Client/[Mm]emoryCaptures/
+Client/[Rr]ecordings/
+Client/.utmp/
+Client/.gradle/
+Client/ExportedObj/
+Client/.consulo/
+Client/sysinfo.txt
+Client/crashlytics-build.properties
+Client/InitTestResults.xml
+
+# Unity 自动生成的解决方案 / 工程（由 asmdef 再生）
+Client/*.csproj
+Client/*.sln
+Client/*.unityproj
+Client/*.booproj
+Client/*.pidb
+Client/*.pidb.meta
+Client/*.svd
+Client/*.opendb
+Client/*.VC.db
+
+# Rider / VS 插件残留
+Client/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------------------------------------------------------------------------
+# HybridCLR（Installer / Generate 产物，体积大且本机可再生成）
+# ---------------------------------------------------------------------------
+Client/HybridCLRData/
+
+# 拷贝进资源目录的热更 / AOT DLL（保留 GameDlls 目录与 .gitkeep）
+Client/Assets/GameDlls/**/*.dll
+Client/Assets/GameDlls/**/*.dll.meta
+Client/Assets/GameDlls/**/*.dll.bytes
+Client/Assets/GameDlls/**/*.dll.bytes.meta
+Client/Assets/GameDlls/**/*.pdb
+Client/Assets/GameDlls/**/*.pdb.meta
+Client/Assets/GameDlls/**/*.mdb
+Client/Assets/GameDlls/**/*.mdb.meta
+
+# ---------------------------------------------------------------------------
+# ZeonAsset 构建 / 发布产物
+# OutputFolder=Bundles（相对 Client）；CdnFolder=../CDN（仓库根）
+# ---------------------------------------------------------------------------
+Client/Bundles/
+CDN/
+Dist/
+
+# 打进首包的 StreamingAssets 资源（菜单 Pack StreamingAssets 再生成）
+Client/Assets/StreamingAssets/AssetBundles/
+Client/Assets/StreamingAssets/AssetBundles.meta
+
+# ---------------------------------------------------------------------------
+# Unity / 通用构建产物
+# ---------------------------------------------------------------------------
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.ipa
+*.exe
+*.nupkg
+*.snupkg
+
+# ---------------------------------------------------------------------------
+# .NET 服务端 / 共享库（Server/ Shared/）
+# 源码、*.csproj、*.sln 入库；bin/obj 忽略
+# ---------------------------------------------------------------------------
+**/[Bb]in/
+**/[Oo]bj/
+**/artifacts/
+TestResult.xml
+TestResults/
+[Cc]overage/
+*.coverage
+*.coveragexml
+*.DotSettings.user
+*.rsuser
+*.ncrunch*
+.*crunch*.local.xml
+_NCrunch_*
+*.Publish.xml
+PublishScripts/
+
+# NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Unity 项目的 Packages 是依赖声明和内嵌包源码；必须随工程提交，
+# 否则新克隆的 Client 无法还原 Package Manager 依赖。
+!Client/Packages/
+!Client/Packages/**
+*.nuget.props
+*.nuget.targets
+
+# ---------------------------------------------------------------------------
+# Node 工具（Tools/version_check_server.js 用标准库，预留 npm）
+# ---------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+Tools/ci/logs/
+Logs/
+*.log
+!**/Packages/**/*.log
+
+# 本机 IP，由 init 生成。模板是 local_dev.example.json。
+Tools/local_dev.json
+
+# 本机盖章产物（含局域网 IP）。init 会写；换地址后再点 Launch / 生成启动配置。
+Client/Assets/StreamingAssets/Launch/boot_config.json
+Client/Assets/StreamingAssets/Launch/boot_config.json.meta
+
+# ---------------------------------------------------------------------------
+# 密钥 / 本地配置
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+secrets.json
+appsettings.*.local.json
+
+# ---------------------------------------------------------------------------
+# 本地写作 / 评审草稿（含大模型 Prompt 与未发表文稿），不进公开仓库
+# ---------------------------------------------------------------------------
+MyDocs/
+
+# ---------------------------------------------------------------------------
+# Shared：仓库根 Shared/ 是权威源；客户端靠 Tools/init 建 Junction
+# ---------------------------------------------------------------------------
+Client/Assets/Game/Scripts/Shared/
+

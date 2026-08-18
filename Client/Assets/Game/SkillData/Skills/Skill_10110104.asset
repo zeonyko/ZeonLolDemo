@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12cb04d8ed4e259458830654b2438d66, type: 3}
+  m_Name: Skill_10110104
+  m_EditorClassIdentifier: 
+  SkillId: 10110104
+  SkillName: "\u7206\u88C2\u706B\u7403"
+  Type: 0
+  AllowedTargets: 3
+  CastRange: 6.5
+  Cooldown: 6
+  CostMana: 40
+  CanCastInStun: 0
+  OrientToTargetOnCast: 1
+  Damage: 120
+  IsAutoAttack: 0
+  Timeline: {fileID: 11400000, guid: 68d0c6f34ef7077409b0b803ce1fbba3, type: 2}
+  SuppressCastBurst: 1
+  CastVfxModule: 
+  HitImpactModule: 
+  DefaultAnimKey: 

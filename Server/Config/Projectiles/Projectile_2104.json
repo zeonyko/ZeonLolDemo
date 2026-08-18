@@ -1,0 +1,166 @@
+{
+  "Logic": {
+    "HasImpact": true,
+    "ImpactRadius": 2.4,
+    "ProjectileId": 2104,
+    "Name": "光辉落雷",
+    "Width": 0.55,
+    "Speed": 17,
+    "MaxDistance": 8.2,
+    "MaxTargets": 1,
+    "PierceCount": 1,
+    "BoltCount": 1,
+    "SpreadDegrees": 0,
+    "VfxKey": "",
+    "VfxColorR": 0.45,
+    "VfxColorG": 0.8,
+    "VfxColorB": 1,
+    "VfxColorA": 0.95,
+    "VfxScaleX": 0.35,
+    "VfxScaleY": 0.35,
+    "VfxYLift": 0,
+    "ImpactDelay": 0.12,
+    "CollisionShape": {
+      "Type": 1,
+      "ShapeType": 1,
+      "SizeX": 0.28,
+      "SizeY": 0,
+      "SizeZ": 0,
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "OffsetZ": 0
+    },
+    "HitEffect": {
+      "Damage": {
+        "Type": 0,
+        "BaseDamage": 0,
+        "Coefficient": 0,
+        "DamageType": 0
+      },
+      "TargetBuffs": []
+    },
+    "HitFeedback": {
+      "AttackType": "Pierce",
+      "CasterFeedbackType": "Caster_Feedback_Pierce"
+    },
+    "Impact": {
+      "HasContent": true,
+      "AttackType": "Pierce",
+      "CasterFeedbackType": "Caster_Feedback_Pierce",
+      "ShapeHits": [
+        {
+          "HasShape": true,
+          "Name": "落雷爆发",
+          "Anchor": {
+            "Type": 2,
+            "TargetRelation": 2,
+            "SelectorType": 2,
+            "Relation": 2,
+            "SearchRadius": 0,
+            "MaxTargetCount": 1,
+            "PositionOffsetX": 0,
+            "PositionOffsetY": 0,
+            "PositionOffsetZ": 0,
+            "RotationOffsetX": 0,
+            "RotationOffsetY": 0,
+            "RotationOffsetZ": 0
+          },
+          "Shape": {
+            "Type": 1,
+            "ShapeType": 1,
+            "SizeX": 2.8,
+            "SizeY": 0,
+            "SizeZ": 0,
+            "OffsetX": 0,
+            "OffsetY": 0,
+            "OffsetZ": 0
+          },
+          "Effect": {
+            "Damage": {
+              "Type": 1,
+              "BaseDamage": 0,
+              "Coefficient": 1.35,
+              "DamageType": 1
+            },
+            "TargetBuffs": [
+              {
+                "TargetRelation": 2,
+                "BuffId": 3010,
+                "Chance": 1,
+                "Relation": 2,
+                "RequireStatusFlags": 0,
+                "OverrideDuration": 1.4
+              },
+              {
+                "TargetRelation": 2,
+                "BuffId": 3009,
+                "Chance": 1,
+                "Relation": 2,
+                "RequireStatusFlags": 0,
+                "OverrideDuration": 3.5
+              }
+            ]
+          },
+          "Feedback": {
+            "AttackType": "Pierce",
+            "CasterFeedbackType": "Caster_Feedback_Pierce"
+          }
+        }
+      ]
+    },
+    "SpawnAreaOnHit": true,
+    "GroundArea": {
+      "HasContent": true,
+      "Name": "光辉法阵",
+      "Anchor": {
+        "Type": 2,
+        "TargetRelation": 2,
+        "SelectorType": 2,
+        "Relation": 2,
+        "SearchRadius": 0,
+        "MaxTargetCount": 1,
+        "PositionOffsetX": 0,
+        "PositionOffsetY": 0,
+        "PositionOffsetZ": 0,
+        "RotationOffsetX": 0,
+        "RotationOffsetY": 0,
+        "RotationOffsetZ": 0
+      },
+      "Duration": 3.5,
+      "TickInterval": 0.5,
+      "ReplaceSame": true,
+      "Shape": {
+        "Type": 1,
+        "ShapeType": 1,
+        "SizeX": 3.2,
+        "SizeY": 0,
+        "SizeZ": 0,
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "OffsetZ": 0
+      },
+      "TickEffect": {
+        "Damage": {
+          "Type": 1,
+          "BaseDamage": 0,
+          "Coefficient": 0.05,
+          "DamageType": 1
+        },
+        "TargetBuffs": [
+          {
+            "TargetRelation": 2,
+            "BuffId": 3002,
+            "Chance": 1,
+            "Relation": 2,
+            "RequireStatusFlags": 0,
+            "OverrideDuration": 1.8
+          }
+        ]
+      },
+      "TickFeedback": {
+        "AttackType": "",
+        "CasterFeedbackType": ""
+      }
+    }
+  }
+}

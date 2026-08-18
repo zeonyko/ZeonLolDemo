@@ -1,0 +1,140 @@
+{
+    "Logic": {
+        "SkillId": 11010202,
+        "Name": "终极闪光",
+        "Type": 1,
+        "AllowedTargets": 3,
+        "CastRange": 48,
+        "Cooldown": 14,
+        "CostMana": 50,
+        "CanCastInStun": false,
+        "OrientToTargetOnCast": true,
+        "Damage": 96,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "ChannelStart",
+                "Param": ""
+            },
+            {
+                "Time": 0,
+                "Duration": 1.1,
+                "Track": 10,
+                "Key": "Windup",
+                "Param": ""
+            },
+            {
+                "Time": 1.1,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "Hit",
+                "Param": "",
+                "Hit": {
+                    "AttackType": "Pierce",
+                    "CasterFeedbackType": "Caster_Feedback_Pierce",
+                    "ShapeHits": [
+                        {
+                            "Name": "终极闪光",
+                            "Anchor": {
+                                "SelectorType": 0,
+                                "Relation": 2,
+                                "SearchRadius": 0,
+                                "MaxTargetCount": 1,
+                                "PositionOffsetX": 0,
+                                "PositionOffsetY": 0,
+                                "PositionOffsetZ": 0,
+                                "RotationOffsetX": 0,
+                                "RotationOffsetY": 0,
+                                "RotationOffsetZ": 0
+                            },
+                            "Shape": {
+                                "ShapeType": 0,
+                                "SizeX": 48,
+                                "SizeY": 1.8,
+                                "SizeZ": 0,
+                                "OffsetX": 0,
+                                "OffsetY": 0,
+                                "OffsetZ": 0
+                            },
+                            "Effect": {
+                                "Damage": {
+                                    "BaseDamage": 0,
+                                    "Coefficient": 1,
+                                    "DamageType": 1
+                                }
+                            },
+                            "Feedback": {
+                                "AttackType": "Pierce",
+                                "CasterFeedbackType": "Caster_Feedback_Pierce"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Time": 1.1,
+                "Duration": 0.45,
+                "Track": 10,
+                "Key": "Recovery",
+                "Param": ""
+            },
+            {
+                "Time": 1.5,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "ChannelEnd",
+                "Param": ""
+            },
+            {
+                "Time": 1.55,
+                "Duration": 0.05,
+                "Track": 10,
+                "Key": "End",
+                "Param": ""
+            }
+        ]
+    },
+    "Presentation": {
+        "SkillId": 11010202,
+        "SuppressCastBurst": true,
+        "Clips": [
+            {
+                "Time": 0,
+                "Duration": 1.6,
+                "Track": 0,
+                "Key": "Play",
+                "Param": "Attack2"
+            },
+            {
+                "Time": 0,
+                "Duration": 1.1,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Charge"
+            },
+            {
+                "Time": 0,
+                "Duration": 1.1,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_GroundBox,Foot"
+            },
+            {
+                "Time": 1.1,
+                "Duration": 0.7,
+                "Track": 2,
+                "Key": "Play",
+                "Param": "Vfx_GroundBox,Foot"
+            },
+            {
+                "Time": 1.1,
+                "Duration": 0.35,
+                "Track": 1,
+                "Key": "Play",
+                "Param": "Sfx_Impact"
+            }
+        ]
+    }
+}
