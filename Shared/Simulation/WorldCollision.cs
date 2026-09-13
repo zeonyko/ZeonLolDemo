@@ -36,27 +36,15 @@ namespace Shared
 
         private static readonly List<BlockerAabb> Blockers = new List<BlockerAabb>(16);
         private static bool _useUvMapBounds;
-        private static float[] _boundAlong = Array.Empty<float>();
-        private static float[] _boundAcross = Array.Empty<float>();
 
         public static IReadOnlyList<BlockerAabb> All => Blockers;
         /// <summary>要不要再用斜向地图边界限制。</summary>
         public static bool UseUvMapBounds => _useUvMapBounds;
-        public static bool HasWalkBoundary => _boundAlong != null && _boundAlong.Length >= 3;
-        public static int WalkBoundaryCount => _boundAlong.Length;
-
-        public static void GetWalkBoundaryLane(int i, out float along, out float across)
-        {
-            along = _boundAlong[i];
-            across = _boundAcross[i];
-        }
 
         public static void Clear()
         {
             Blockers.Clear();
             _useUvMapBounds = false;
-            _boundAlong = Array.Empty<float>();
-            _boundAcross = Array.Empty<float>();
         }
 
         /// <summary>加一块水平阻挡。</summary>
@@ -81,10 +69,7 @@ namespace Shared
         {
             if (cfg == null) return false;
             Clear();
-            LoadWalkBoundary(cfg);
-            _useUvMapBounds = cfg.UseUvMapBounds && !HasWalkBoundary;
-            if (HasWalkBoundary)
-                AssertPlayableSpawns();
+            _useUvMapBounds = cfg.UseUvMapBounds;
             if (cfg.Blockers == null) return true;
 
             for (int i = 0; i < cfg.Blockers.Length; i++)
@@ -96,33 +81,6 @@ namespace Shared
                 AddBox(b.CenterX, b.CenterZ, sx, sz);
             }
             return true;
-        }
-
-        static void LoadWalkBoundary(MapCollisionConfig cfg)
-        {
-            var src = cfg.WalkBoundary;
-            if (src == null || src.Length < 3)
-                return;
-
-            _boundAlong = new float[src.Length];
-            _boundAcross = new float[src.Length];
-            for (int i = 0; i < src.Length; i++)
-            {
-                var p = src[i];
-                _boundAlong[i] = p != null ? p.Along : 0f;
-                _boundAcross[i] = p != null ? p.Across : 0f;
-            }
-        }
-
-        static void AssertPlayableSpawns()
-        {
-            AramMap.GetPlayerSpawn(ETeamId.Blue, out float bx, out float bz);
-            AramMap.GetPlayerSpawn(ETeamId.Red, out float rx, out float rz);
-            if (!Contains(bx, bz) || !Contains(rx, rz))
-            {
-                throw new InvalidOperationException(
-                    "WalkBoundary excludes player spawn; movement would lock.");
-            }
         }
 
         /// <summary>读取默认地图碰撞表。地图配置缺失或无效时直接失败。</summary>
@@ -188,18 +146,14 @@ namespace Shared
                 }
             }
 
-            if (HasWalkBoundary)
-            {
-                float tPoly = ClampDistanceByWalkBoundary(originX, originZ, dirX, dirZ, distance);
-                if (tPoly < best) best = tPoly;
-            }
-            else if (_useUvMapBounds)
+            if (_useUvMapBounds)
             {
                 float tUv = ClampDistanceByUvBounds(originX, originZ, dirX, dirZ, distance, agentRadius);
                 if (tUv < best) best = tUv;
             }
 
             if (best < 0f) best = 0f;
+            // 没撞墙时不要扣空隙。步子太小会被扣成走不动。
             if (best < distance)
                 best = Math.Max(0f, best - Skin);
             return best > distance ? distance : best;
@@ -209,90 +163,7 @@ namespace Shared
 
         #region --- 内部射线/盒子 ---
 
-        public static bool Contains(float x, float z)
-        {
-            if (!HasWalkBoundary)
-                return true;
-            AramMap.WorldToLane(x, z, out float along, out float across);
-            return PointInBoundary(along, across);
-        }
-
-        public static void ClampToWalkable(ref float x, ref float z, float agentRadius = DefaultAgentRadius)
-        {
-            if (!HasWalkBoundary)
-            {
-                AramMap.ClampToLane(ref x, ref z, agentRadius);
-                return;
-            }
-
-            if (Contains(x, z))
-                return;
-
-            AramMap.WorldToLane(x, z, out float along, out float across);
-            along = Clamp(along, -AramMap.LaneHalfLength, AramMap.LaneHalfLength);
-            across = 0f;
-            AramMap.LaneToWorld(along, across, out x, out z);
-            if (Contains(x, z))
-                return;
-
-            AramMap.LaneToWorld(0f, 0f, out x, out z);
-        }
-
-        static float Clamp(float v, float lo, float hi)
-        {
-            if (v < lo) return lo;
-            if (v > hi) return hi;
-            return v;
-        }
-
-        static bool PointInBoundary(float along, float across)
-        {
-            int n = _boundAlong.Length;
-            bool inside = false;
-            float x1 = _boundAlong[n - 1];
-            float y1 = _boundAcross[n - 1];
-            for (int i = 0; i < n; i++)
-            {
-                float x2 = _boundAlong[i];
-                float y2 = _boundAcross[i];
-                bool yCross = (y1 > across) != (y2 > across);
-                if (yCross)
-                {
-                    float xAt = x1 + (across - y1) * (x2 - x1) / (y2 - y1);
-                    if (along < xAt)
-                        inside = !inside;
-                }
-
-                x1 = x2;
-                y1 = y2;
-            }
-
-            return inside;
-        }
-
-        static float ClampDistanceByWalkBoundary(float ox, float oz, float dx, float dz, float distance)
-        {
-            AramMap.WorldToLane(ox + dx * distance, oz + dz * distance, out float au, out float av);
-            if (PointInBoundary(au, av))
-                return distance;
-            if (!Contains(ox, oz))
-                return 0f;
-
-            float lo = 0f;
-            float hi = distance;
-            for (int i = 0; i < 12; i++)
-            {
-                float mid = (lo + hi) * 0.5f;
-                AramMap.WorldToLane(ox + dx * mid, oz + dz * mid, out float u, out float v);
-                if (PointInBoundary(u, v))
-                    lo = mid;
-                else
-                    hi = mid;
-            }
-
-            return lo;
-        }
-
+        // 斜向边界：沿推进/横向轴看会不会走出地图。
         private static float ClampDistanceByUvBounds(
             float ox, float oz, float dx, float dz, float distance, float agentRadius)
         {
@@ -314,6 +185,7 @@ namespace Shared
             return t;
         }
 
+        // 这一轴上最多还能走多远才出界。
         private static float MaxTInsideAxis(float origin, float dir, float lim)
         {
             if (Math.Abs(dir) < 1e-8f)
@@ -324,6 +196,7 @@ namespace Shared
             return (-lim - origin) / dir;
         }
 
+        // 这条线和阻挡盒相不相交，相交就返回碰到的距离。
         private static bool TryRayAabb2D(
             float ox, float oz, float dx, float dz, float maxDist,
             float minX, float maxX, float minZ, float maxZ,
@@ -348,6 +221,7 @@ namespace Shared
             return true;
         }
 
+        // 按这一轴裁剪能走的范围。
         private static bool ClipAxis(float origin, float dir, float min, float max, ref float tMin, ref float tMax)
         {
             if (Math.Abs(dir) < 1e-8f)

@@ -23,14 +23,5 @@ namespace Shared
         public string MapId = DefaultMapId;
         public bool UseUvMapBounds = true;
         public MapCollisionBlockerData[] Blockers = Array.Empty<MapCollisionBlockerData>();
-        public LanePoint[] WalkBoundary = Array.Empty<LanePoint>();
-    }
-
-    /// <summary>推进/横向坐标上的一点。</summary>
-    [Serializable]
-    public class LanePoint
-    {
-        public float Along;
-        public float Across;
     }
 }

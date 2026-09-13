@@ -91,7 +91,6 @@ namespace Client.Battle
             DevicePerf.ExtraPerfLines = BattleGmSnapshot.PerfLines;
             DevicePerf.ExtraDumpLines = BattleGmSnapshot.DumpLines;
             BattleGmHost.Ensure();
-            CollisionDebugView.Enabled = true;
         }
 
         #endregion
@@ -100,7 +99,6 @@ namespace Client.Battle
 
         private void DetachNetAndUi()
         {
-            CollisionDebugView.Shutdown();
             BattleGmHost.Shutdown();
             Playback.Instance?.Shutdown();
             SfxLibrary.Clear();

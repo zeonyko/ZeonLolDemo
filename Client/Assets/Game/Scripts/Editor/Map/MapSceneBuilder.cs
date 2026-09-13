@@ -23,23 +23,15 @@ namespace Client.EditorTools
                 list.Add(volumes[i].ToBlockerData());
             }
 
-            LanePoint[] keep = System.Array.Empty<LanePoint>();
-            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
-            if (File.Exists(clientAbs))
-            {
-                var old = JsonUtility.FromJson<MapCollisionConfig>(File.ReadAllText(clientAbs));
-                if (old != null && old.WalkBoundary != null)
-                    keep = old.WalkBoundary;
-            }
-
             var cfg = new MapCollisionConfig
             {
                 MapId = MapCollisionConfig.DefaultMapId,
-                UseUvMapBounds = keep.Length < 3,
-                Blockers = list.ToArray(),
-                WalkBoundary = keep
+                UseUvMapBounds = true,
+                Blockers = list.ToArray()
             };
             string json = JsonUtility.ToJson(cfg, true);
+            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
+
             WriteText(clientAbs, json);
             AssetDatabase.Refresh();
             if (log)
