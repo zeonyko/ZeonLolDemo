@@ -1,5 +1,911 @@
 {
-    "MapId": "HowlingAbyss",
-    "UseUvMapBounds": true,
-    "Blockers": []
+  "MapId": "HowlingAbyss",
+  "UseUvMapBounds": false,
+  "Blockers": [],
+  "WalkBoundary": [
+    {
+      "Along": -56.0,
+      "Across": -6.4
+    },
+    {
+      "Along": -55.0,
+      "Across": -6.867
+    },
+    {
+      "Along": -54.0,
+      "Across": -7.333
+    },
+    {
+      "Along": -53.0,
+      "Across": -7.8
+    },
+    {
+      "Along": -52.0,
+      "Across": -8.267
+    },
+    {
+      "Along": -51.0,
+      "Across": -8.733
+    },
+    {
+      "Along": -50.0,
+      "Across": -9.2
+    },
+    {
+      "Along": -49.0,
+      "Across": -8.725
+    },
+    {
+      "Along": -48.0,
+      "Across": -8.25
+    },
+    {
+      "Along": -47.0,
+      "Across": -7.775
+    },
+    {
+      "Along": -46.0,
+      "Across": -7.3
+    },
+    {
+      "Along": -45.0,
+      "Across": -6.825
+    },
+    {
+      "Along": -44.0,
+      "Across": -6.35
+    },
+    {
+      "Along": -43.0,
+      "Across": -5.875
+    },
+    {
+      "Along": -42.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -41.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -40.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -39.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -38.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -37.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -36.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -35.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -34.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -33.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -32.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -31.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -30.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -29.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -28.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -27.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -26.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -25.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -24.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -23.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -22.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -21.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -20.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -19.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -18.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -17.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -16.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -15.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -14.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -13.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -12.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -11.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -10.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -9.0,
+      "Across": -5.8
+    },
+    {
+      "Along": -8.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -7.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -6.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -5.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -4.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -3.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -2.0,
+      "Across": -5.4
+    },
+    {
+      "Along": -1.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 0.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 1.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 2.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 3.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 4.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 5.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 6.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 7.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 8.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 9.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 10.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 11.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 12.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 13.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 14.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 15.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 16.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 17.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 18.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 19.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 20.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 21.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 22.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 23.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 24.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 25.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 26.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 27.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 28.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 29.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 30.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 31.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 32.0,
+      "Across": -5.8
+    },
+    {
+      "Along": 33.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 34.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 35.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 36.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 37.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 38.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 39.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 40.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 41.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 42.0,
+      "Across": -5.4
+    },
+    {
+      "Along": 43.0,
+      "Across": -5.875
+    },
+    {
+      "Along": 44.0,
+      "Across": -6.35
+    },
+    {
+      "Along": 45.0,
+      "Across": -6.825
+    },
+    {
+      "Along": 46.0,
+      "Across": -7.3
+    },
+    {
+      "Along": 47.0,
+      "Across": -7.775
+    },
+    {
+      "Along": 48.0,
+      "Across": -8.25
+    },
+    {
+      "Along": 49.0,
+      "Across": -8.725
+    },
+    {
+      "Along": 50.0,
+      "Across": -9.2
+    },
+    {
+      "Along": 51.0,
+      "Across": -8.733
+    },
+    {
+      "Along": 52.0,
+      "Across": -8.267
+    },
+    {
+      "Along": 53.0,
+      "Across": -7.8
+    },
+    {
+      "Along": 54.0,
+      "Across": -7.333
+    },
+    {
+      "Along": 55.0,
+      "Across": -6.867
+    },
+    {
+      "Along": 56.0,
+      "Across": -6.4
+    },
+    {
+      "Along": 56.0,
+      "Across": 6.4
+    },
+    {
+      "Along": 55.0,
+      "Across": 6.867
+    },
+    {
+      "Along": 54.0,
+      "Across": 7.333
+    },
+    {
+      "Along": 53.0,
+      "Across": 7.8
+    },
+    {
+      "Along": 52.0,
+      "Across": 8.267
+    },
+    {
+      "Along": 51.0,
+      "Across": 8.733
+    },
+    {
+      "Along": 50.0,
+      "Across": 9.2
+    },
+    {
+      "Along": 49.0,
+      "Across": 8.725
+    },
+    {
+      "Along": 48.0,
+      "Across": 8.25
+    },
+    {
+      "Along": 47.0,
+      "Across": 7.775
+    },
+    {
+      "Along": 46.0,
+      "Across": 7.3
+    },
+    {
+      "Along": 45.0,
+      "Across": 6.825
+    },
+    {
+      "Along": 44.0,
+      "Across": 6.35
+    },
+    {
+      "Along": 43.0,
+      "Across": 5.875
+    },
+    {
+      "Along": 42.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 41.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 40.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 39.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 38.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 37.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 36.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 35.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 34.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 33.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 32.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 31.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 30.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 29.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 28.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 27.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 26.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 25.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 24.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 23.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 22.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 21.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 20.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 19.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 18.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 17.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 16.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 15.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 14.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 13.0,
+      "Across": 5.4
+    },
+    {
+      "Along": 12.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 11.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 10.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 9.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 8.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 7.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 6.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 5.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 4.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 3.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 2.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 1.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 0.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -1.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -2.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -3.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -4.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -5.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -6.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -7.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -8.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -9.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -10.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -11.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -12.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -13.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -14.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -15.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -16.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -17.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -18.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -19.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -20.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -21.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -22.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -23.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -24.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -25.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -26.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -27.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -28.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -29.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -30.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -31.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -32.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -33.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -34.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -35.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -36.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -37.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -38.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -39.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -40.0,
+      "Across": 5.8
+    },
+    {
+      "Along": -41.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -42.0,
+      "Across": 5.4
+    },
+    {
+      "Along": -43.0,
+      "Across": 5.875
+    },
+    {
+      "Along": -44.0,
+      "Across": 6.35
+    },
+    {
+      "Along": -45.0,
+      "Across": 6.825
+    },
+    {
+      "Along": -46.0,
+      "Across": 7.3
+    },
+    {
+      "Along": -47.0,
+      "Across": 7.775
+    },
+    {
+      "Along": -48.0,
+      "Across": 8.25
+    },
+    {
+      "Along": -49.0,
+      "Across": 8.725
+    },
+    {
+      "Along": -50.0,
+      "Across": 9.2
+    },
+    {
+      "Along": -51.0,
+      "Across": 8.733
+    },
+    {
+      "Along": -52.0,
+      "Across": 8.267
+    },
+    {
+      "Along": -53.0,
+      "Across": 7.8
+    },
+    {
+      "Along": -54.0,
+      "Across": 7.333
+    },
+    {
+      "Along": -55.0,
+      "Across": 6.867
+    },
+    {
+      "Along": -56.0,
+      "Across": 6.4
+    }
+  ]
 }
