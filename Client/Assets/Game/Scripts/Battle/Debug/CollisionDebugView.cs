@@ -45,7 +45,7 @@ namespace Client.Battle
 
             void Awake()
             {
-                _uv = CreateLine("WalkBoundary", 0.10f, new Color(0.2f, 0.95f, 0.85f, 0.95f));
+                _uv = CreateLine("WalkBoundary", 0.22f, new Color(0.05f, 1f, 0.75f, 1f));
             }
 
             LineRenderer CreateLine(string name, float width, Color color)
@@ -84,7 +84,7 @@ namespace Client.Battle
 
             void DrawBoundary()
             {
-                float y = GameConstants.GroundY + 0.08f;
+                float y = GameConstants.GroundY + 0.45f;
                 if (WorldCollision.HasWalkBoundary)
                 {
                     int n = WorldCollision.WalkBoundaryCount;

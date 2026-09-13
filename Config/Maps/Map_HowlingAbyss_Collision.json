@@ -5,15 +5,15 @@
   "WalkBoundary": [
     {
       "Along": -56.0,
-      "Across": -6.4
+      "Across": -6.2
     },
     {
       "Along": -55.0,
-      "Across": -6.867
+      "Across": -6.8
     },
     {
       "Along": -54.0,
-      "Across": -7.333
+      "Across": -7.4
     },
     {
       "Along": -53.0,
@@ -21,51 +21,51 @@
     },
     {
       "Along": -52.0,
-      "Across": -8.267
+      "Across": -8.2
     },
     {
       "Along": -51.0,
-      "Across": -8.733
+      "Across": -8.6
     },
     {
       "Along": -50.0,
-      "Across": -9.2
+      "Across": -9.0
     },
     {
       "Along": -49.0,
-      "Across": -8.725
+      "Across": -9.0
     },
     {
       "Along": -48.0,
-      "Across": -8.25
+      "Across": -9.0
     },
     {
       "Along": -47.0,
-      "Across": -7.775
+      "Across": -9.0
     },
     {
       "Along": -46.0,
-      "Across": -7.3
+      "Across": -9.0
     },
     {
       "Along": -45.0,
-      "Across": -6.825
+      "Across": -8.067
     },
     {
       "Along": -44.0,
-      "Across": -6.35
+      "Across": -7.133
     },
     {
       "Along": -43.0,
-      "Across": -5.875
+      "Across": -6.2
     },
     {
       "Along": -42.0,
-      "Across": -5.4
+      "Across": -6.067
     },
     {
       "Along": -41.0,
-      "Across": -5.4
+      "Across": -5.933
     },
     {
       "Along": -40.0,
@@ -93,43 +93,43 @@
     },
     {
       "Along": -34.0,
-      "Across": -5.8
+      "Across": -6.15
     },
     {
       "Along": -33.0,
-      "Across": -5.8
+      "Across": -6.5
     },
     {
       "Along": -32.0,
-      "Across": -5.8
+      "Across": -6.85
     },
     {
       "Along": -31.0,
-      "Across": -5.8
+      "Across": -7.2
     },
     {
       "Along": -30.0,
-      "Across": -5.8
+      "Across": -6.943
     },
     {
       "Along": -29.0,
-      "Across": -5.8
+      "Across": -6.686
     },
     {
       "Along": -28.0,
-      "Across": -5.4
+      "Across": -6.429
     },
     {
       "Along": -27.0,
-      "Across": -5.4
+      "Across": -6.171
     },
     {
       "Along": -26.0,
-      "Across": -5.4
+      "Across": -5.914
     },
     {
       "Along": -25.0,
-      "Across": -5.4
+      "Across": -5.657
     },
     {
       "Along": -24.0,
@@ -137,15 +137,15 @@
     },
     {
       "Along": -23.0,
-      "Across": -5.4
+      "Across": -5.5
     },
     {
       "Along": -22.0,
-      "Across": -5.4
+      "Across": -5.6
     },
     {
       "Along": -21.0,
-      "Across": -5.4
+      "Across": -5.7
     },
     {
       "Along": -20.0,
@@ -153,43 +153,43 @@
     },
     {
       "Along": -19.0,
-      "Across": -5.8
+      "Across": -5.95
     },
     {
       "Along": -18.0,
-      "Across": -5.8
+      "Across": -6.1
     },
     {
       "Along": -17.0,
-      "Across": -5.8
+      "Across": -6.25
     },
     {
       "Along": -16.0,
-      "Across": -5.8
+      "Across": -6.4
     },
     {
       "Along": -15.0,
-      "Across": -5.8
+      "Across": -6.314
     },
     {
       "Along": -14.0,
-      "Across": -5.8
+      "Across": -6.229
     },
     {
       "Along": -13.0,
-      "Across": -5.8
+      "Across": -6.143
     },
     {
       "Along": -12.0,
-      "Across": -5.8
+      "Across": -6.057
     },
     {
       "Along": -11.0,
-      "Across": -5.8
+      "Across": -5.971
     },
     {
       "Along": -10.0,
-      "Across": -5.8
+      "Across": -5.886
     },
     {
       "Along": -9.0,
@@ -197,71 +197,71 @@
     },
     {
       "Along": -8.0,
-      "Across": -5.4
+      "Across": -5.68
     },
     {
       "Along": -7.0,
-      "Across": -5.4
+      "Across": -5.56
     },
     {
       "Along": -6.0,
-      "Across": -5.4
+      "Across": -5.44
     },
     {
       "Along": -5.0,
-      "Across": -5.4
+      "Across": -5.32
     },
     {
       "Along": -4.0,
-      "Across": -5.4
+      "Across": -5.2
     },
     {
       "Along": -3.0,
-      "Across": -5.4
+      "Across": -5.2
     },
     {
       "Along": -2.0,
-      "Across": -5.4
+      "Across": -5.2
     },
     {
       "Along": -1.0,
-      "Across": -5.4
+      "Across": -5.2
     },
     {
       "Along": 0.0,
-      "Across": -5.4
+      "Across": -5.2
     },
     {
       "Along": 1.0,
-      "Across": -5.8
+      "Across": -5.05
     },
     {
       "Along": 2.0,
-      "Across": -5.8
+      "Across": -4.9
     },
     {
       "Along": 3.0,
-      "Across": -5.8
+      "Across": -4.75
     },
     {
       "Along": 4.0,
-      "Across": -5.8
+      "Across": -4.6
     },
     {
       "Along": 5.0,
-      "Across": -5.8
+      "Across": -4.84
     },
     {
       "Along": 6.0,
-      "Across": -5.8
+      "Across": -5.08
     },
     {
       "Along": 7.0,
-      "Across": -5.8
+      "Across": -5.32
     },
     {
       "Along": 8.0,
-      "Across": -5.8
+      "Across": -5.56
     },
     {
       "Along": 9.0,
@@ -269,47 +269,47 @@
     },
     {
       "Along": 10.0,
-      "Across": -5.8
+      "Across": -5.571
     },
     {
       "Along": 11.0,
-      "Across": -5.8
+      "Across": -5.343
     },
     {
       "Along": 12.0,
-      "Across": -5.8
+      "Across": -5.114
     },
     {
       "Along": 13.0,
-      "Across": -5.4
+      "Across": -4.886
     },
     {
       "Along": 14.0,
-      "Across": -5.4
+      "Across": -4.657
     },
     {
       "Along": 15.0,
-      "Across": -5.4
+      "Across": -4.429
     },
     {
       "Along": 16.0,
-      "Across": -5.4
+      "Across": -4.2
     },
     {
       "Along": 17.0,
-      "Across": -5.4
+      "Across": -4.52
     },
     {
       "Along": 18.0,
-      "Across": -5.4
+      "Across": -4.84
     },
     {
       "Along": 19.0,
-      "Across": -5.4
+      "Across": -5.16
     },
     {
       "Along": 20.0,
-      "Across": -5.4
+      "Across": -5.48
     },
     {
       "Along": 21.0,
@@ -317,283 +317,283 @@
     },
     {
       "Along": 22.0,
-      "Across": -5.8
+      "Across": -5.667
     },
     {
       "Along": 23.0,
-      "Across": -5.8
+      "Across": -5.533
     },
     {
       "Along": 24.0,
-      "Across": -5.8
+      "Across": -5.4
     },
     {
       "Along": 25.0,
-      "Across": -5.8
+      "Across": -5.371
     },
     {
       "Along": 26.0,
-      "Across": -5.8
+      "Across": -5.343
     },
     {
       "Along": 27.0,
-      "Across": -5.8
+      "Across": -5.314
     },
     {
       "Along": 28.0,
-      "Across": -5.8
+      "Across": -5.286
     },
     {
       "Along": 29.0,
-      "Across": -5.8
+      "Across": -5.257
     },
     {
       "Along": 30.0,
-      "Across": -5.8
+      "Across": -5.229
     },
     {
       "Along": 31.0,
-      "Across": -5.8
+      "Across": -5.2
     },
     {
       "Along": 32.0,
-      "Across": -5.8
+      "Across": -5.35
     },
     {
       "Along": 33.0,
-      "Across": -5.4
+      "Across": -5.5
     },
     {
       "Along": 34.0,
-      "Across": -5.4
+      "Across": -5.65
     },
     {
       "Along": 35.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 36.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 37.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 38.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 39.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 40.0,
-      "Across": -5.4
+      "Across": -5.8
     },
     {
       "Along": 41.0,
-      "Across": -5.4
+      "Across": -5.867
     },
     {
       "Along": 42.0,
-      "Across": -5.4
+      "Across": -5.933
     },
     {
       "Along": 43.0,
-      "Across": -5.875
+      "Across": -6.0
     },
     {
       "Along": 44.0,
-      "Across": -6.35
+      "Across": -7.0
     },
     {
       "Along": 45.0,
-      "Across": -6.825
+      "Across": -8.0
     },
     {
       "Along": 46.0,
-      "Across": -7.3
+      "Across": -9.0
     },
     {
       "Along": 47.0,
-      "Across": -7.775
+      "Across": -9.0
     },
     {
       "Along": 48.0,
-      "Across": -8.25
+      "Across": -9.0
     },
     {
       "Along": 49.0,
-      "Across": -8.725
+      "Across": -9.0
     },
     {
       "Along": 50.0,
-      "Across": -9.2
+      "Across": -9.0
     },
     {
       "Along": 51.0,
-      "Across": -8.733
+      "Across": -8.8
     },
     {
       "Along": 52.0,
-      "Across": -8.267
+      "Across": -8.6
     },
     {
       "Along": 53.0,
-      "Across": -7.8
+      "Across": -8.4
     },
     {
       "Along": 54.0,
-      "Across": -7.333
+      "Across": -8.2
     },
     {
       "Along": 55.0,
-      "Across": -6.867
+      "Across": -7.2
     },
     {
       "Along": 56.0,
-      "Across": -6.4
+      "Across": -6.2
     },
     {
       "Along": 56.0,
+      "Across": 6.2
+    },
+    {
+      "Along": 55.0,
+      "Across": 6.8
+    },
+    {
+      "Along": 54.0,
+      "Across": 7.4
+    },
+    {
+      "Along": 53.0,
+      "Across": 7.8
+    },
+    {
+      "Along": 52.0,
+      "Across": 8.2
+    },
+    {
+      "Along": 51.0,
+      "Across": 8.6
+    },
+    {
+      "Along": 50.0,
+      "Across": 9.0
+    },
+    {
+      "Along": 49.0,
+      "Across": 9.0
+    },
+    {
+      "Along": 48.0,
+      "Across": 9.0
+    },
+    {
+      "Along": 47.0,
+      "Across": 9.0
+    },
+    {
+      "Along": 46.0,
+      "Across": 9.0
+    },
+    {
+      "Along": 45.0,
+      "Across": 8.067
+    },
+    {
+      "Along": 44.0,
+      "Across": 7.133
+    },
+    {
+      "Along": 43.0,
+      "Across": 6.2
+    },
+    {
+      "Along": 42.0,
+      "Across": 6.067
+    },
+    {
+      "Along": 41.0,
+      "Across": 5.933
+    },
+    {
+      "Along": 40.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 39.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 38.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 37.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 36.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 35.0,
+      "Across": 5.8
+    },
+    {
+      "Along": 34.0,
+      "Across": 5.95
+    },
+    {
+      "Along": 33.0,
+      "Across": 6.1
+    },
+    {
+      "Along": 32.0,
+      "Across": 6.25
+    },
+    {
+      "Along": 31.0,
       "Across": 6.4
     },
     {
-      "Along": 55.0,
-      "Across": 6.867
-    },
-    {
-      "Along": 54.0,
-      "Across": 7.333
-    },
-    {
-      "Along": 53.0,
-      "Across": 7.8
-    },
-    {
-      "Along": 52.0,
-      "Across": 8.267
-    },
-    {
-      "Along": 51.0,
-      "Across": 8.733
-    },
-    {
-      "Along": 50.0,
-      "Across": 9.2
-    },
-    {
-      "Along": 49.0,
-      "Across": 8.725
-    },
-    {
-      "Along": 48.0,
-      "Across": 8.25
-    },
-    {
-      "Along": 47.0,
-      "Across": 7.775
-    },
-    {
-      "Along": 46.0,
-      "Across": 7.3
-    },
-    {
-      "Along": 45.0,
-      "Across": 6.825
-    },
-    {
-      "Along": 44.0,
-      "Across": 6.35
-    },
-    {
-      "Along": 43.0,
-      "Across": 5.875
-    },
-    {
-      "Along": 42.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 41.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 40.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 39.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 38.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 37.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 36.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 35.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 34.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 33.0,
-      "Across": 5.4
-    },
-    {
-      "Along": 32.0,
-      "Across": 5.8
-    },
-    {
-      "Along": 31.0,
-      "Across": 5.8
-    },
-    {
       "Along": 30.0,
-      "Across": 5.8
+      "Across": 6.286
     },
     {
       "Along": 29.0,
-      "Across": 5.8
+      "Across": 6.171
     },
     {
       "Along": 28.0,
-      "Across": 5.8
+      "Across": 6.057
     },
     {
       "Along": 27.0,
-      "Across": 5.8
+      "Across": 5.943
     },
     {
       "Along": 26.0,
-      "Across": 5.8
+      "Across": 5.829
     },
     {
       "Along": 25.0,
-      "Across": 5.8
+      "Across": 5.714
     },
     {
       "Along": 24.0,
-      "Across": 5.8
+      "Across": 5.6
     },
     {
       "Along": 23.0,
-      "Across": 5.8
+      "Across": 5.667
     },
     {
       "Along": 22.0,
-      "Across": 5.8
+      "Across": 5.733
     },
     {
       "Along": 21.0,
@@ -601,47 +601,47 @@
     },
     {
       "Along": 20.0,
-      "Across": 5.4
+      "Across": 5.68
     },
     {
       "Along": 19.0,
-      "Across": 5.4
+      "Across": 5.56
     },
     {
       "Along": 18.0,
-      "Across": 5.4
+      "Across": 5.44
     },
     {
       "Along": 17.0,
-      "Across": 5.4
+      "Across": 5.32
     },
     {
       "Along": 16.0,
-      "Across": 5.4
+      "Across": 5.2
     },
     {
       "Along": 15.0,
-      "Across": 5.4
+      "Across": 5.286
     },
     {
       "Along": 14.0,
-      "Across": 5.4
+      "Across": 5.371
     },
     {
       "Along": 13.0,
-      "Across": 5.4
+      "Across": 5.457
     },
     {
       "Along": 12.0,
-      "Across": 5.8
+      "Across": 5.543
     },
     {
       "Along": 11.0,
-      "Across": 5.8
+      "Across": 5.629
     },
     {
       "Along": 10.0,
-      "Across": 5.8
+      "Across": 5.714
     },
     {
       "Along": 9.0,
@@ -649,71 +649,71 @@
     },
     {
       "Along": 8.0,
-      "Across": 5.8
+      "Across": 5.6
     },
     {
       "Along": 7.0,
-      "Across": 5.8
+      "Across": 5.4
     },
     {
       "Along": 6.0,
-      "Across": 5.8
+      "Across": 5.2
     },
     {
       "Along": 5.0,
-      "Across": 5.8
+      "Across": 5.0
     },
     {
       "Along": 4.0,
-      "Across": 5.8
+      "Across": 4.8
     },
     {
       "Along": 3.0,
-      "Across": 5.8
+      "Across": 4.65
     },
     {
       "Along": 2.0,
-      "Across": 5.8
+      "Across": 4.5
     },
     {
       "Along": 1.0,
-      "Across": 5.8
+      "Across": 4.35
     },
     {
       "Along": 0.0,
-      "Across": 5.4
+      "Across": 4.2
     },
     {
       "Along": -1.0,
-      "Across": 5.4
+      "Across": 4.3
     },
     {
       "Along": -2.0,
-      "Across": 5.4
+      "Across": 4.4
     },
     {
       "Along": -3.0,
-      "Across": 5.4
+      "Across": 4.5
     },
     {
       "Along": -4.0,
-      "Across": 5.4
+      "Across": 4.6
     },
     {
       "Along": -5.0,
-      "Across": 5.4
+      "Across": 4.84
     },
     {
       "Along": -6.0,
-      "Across": 5.4
+      "Across": 5.08
     },
     {
       "Along": -7.0,
-      "Across": 5.4
+      "Across": 5.32
     },
     {
       "Along": -8.0,
-      "Across": 5.4
+      "Across": 5.56
     },
     {
       "Along": -9.0,
@@ -721,43 +721,43 @@
     },
     {
       "Along": -10.0,
-      "Across": 5.8
+      "Across": 5.686
     },
     {
       "Along": -11.0,
-      "Across": 5.8
+      "Across": 5.571
     },
     {
       "Along": -12.0,
-      "Across": 5.8
+      "Across": 5.457
     },
     {
       "Along": -13.0,
-      "Across": 5.8
+      "Across": 5.343
     },
     {
       "Along": -14.0,
-      "Across": 5.8
+      "Across": 5.229
     },
     {
       "Along": -15.0,
-      "Across": 5.8
+      "Across": 5.114
     },
     {
       "Along": -16.0,
-      "Across": 5.8
+      "Across": 5.0
     },
     {
       "Along": -17.0,
-      "Across": 5.8
+      "Across": 5.2
     },
     {
       "Along": -18.0,
-      "Across": 5.8
+      "Across": 5.4
     },
     {
       "Along": -19.0,
-      "Across": 5.8
+      "Across": 5.6
     },
     {
       "Along": -20.0,
@@ -765,15 +765,15 @@
     },
     {
       "Along": -21.0,
-      "Across": 5.4
+      "Across": 5.7
     },
     {
       "Along": -22.0,
-      "Across": 5.4
+      "Across": 5.6
     },
     {
       "Along": -23.0,
-      "Across": 5.4
+      "Across": 5.5
     },
     {
       "Along": -24.0,
@@ -781,43 +781,43 @@
     },
     {
       "Along": -25.0,
-      "Across": 5.4
+      "Across": 5.371
     },
     {
       "Along": -26.0,
-      "Across": 5.4
+      "Across": 5.343
     },
     {
       "Along": -27.0,
-      "Across": 5.4
+      "Across": 5.314
     },
     {
       "Along": -28.0,
-      "Across": 5.4
+      "Across": 5.286
     },
     {
       "Along": -29.0,
-      "Across": 5.8
+      "Across": 5.257
     },
     {
       "Along": -30.0,
-      "Across": 5.8
+      "Across": 5.229
     },
     {
       "Along": -31.0,
-      "Across": 5.8
+      "Across": 5.2
     },
     {
       "Along": -32.0,
-      "Across": 5.8
+      "Across": 5.35
     },
     {
       "Along": -33.0,
-      "Across": 5.8
+      "Across": 5.5
     },
     {
       "Along": -34.0,
-      "Across": 5.8
+      "Across": 5.65
     },
     {
       "Along": -35.0,
@@ -845,67 +845,67 @@
     },
     {
       "Along": -41.0,
-      "Across": 5.4
+      "Across": 5.867
     },
     {
       "Along": -42.0,
-      "Across": 5.4
+      "Across": 5.933
     },
     {
       "Along": -43.0,
-      "Across": 5.875
+      "Across": 6.0
     },
     {
       "Along": -44.0,
-      "Across": 6.35
+      "Across": 7.0
     },
     {
       "Along": -45.0,
-      "Across": 6.825
+      "Across": 8.0
     },
     {
       "Along": -46.0,
-      "Across": 7.3
+      "Across": 9.0
     },
     {
       "Along": -47.0,
-      "Across": 7.775
+      "Across": 9.0
     },
     {
       "Along": -48.0,
-      "Across": 8.25
+      "Across": 9.0
     },
     {
       "Along": -49.0,
-      "Across": 8.725
+      "Across": 9.0
     },
     {
       "Along": -50.0,
-      "Across": 9.2
+      "Across": 9.0
     },
     {
       "Along": -51.0,
-      "Across": 8.733
+      "Across": 8.8
     },
     {
       "Along": -52.0,
-      "Across": 8.267
+      "Across": 8.6
     },
     {
       "Along": -53.0,
-      "Across": 7.8
+      "Across": 8.4
     },
     {
       "Along": -54.0,
-      "Across": 7.333
+      "Across": 8.2
     },
     {
       "Along": -55.0,
-      "Across": 6.867
+      "Across": 7.2
     },
     {
       "Along": -56.0,
-      "Across": 6.4
+      "Across": 6.2
     }
   ]
 }
