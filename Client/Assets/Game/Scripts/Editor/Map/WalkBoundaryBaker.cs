@@ -10,7 +10,6 @@ using UnityEngine;
 namespace Client.EditorTools
 {
     /// <summary>Scene 画出整圈内沿；菜单按活体甲板采样左右岸。</summary>
-    [InitializeOnLoad]
     public static class WalkBoundaryBaker
     {
         const float DeckMinY = -0.4f;
@@ -24,23 +23,18 @@ namespace Client.EditorTools
         static List<Vector3> _sceneLoop;
         static string _sceneStamp;
 
-        static WalkBoundaryBaker()
+        [InitializeOnLoadMethod]
+        static void InitSceneOverlay()
         {
+            SceneView.duringSceneGui -= OnSceneGui;
             SceneView.duringSceneGui += OnSceneGui;
         }
 
-        [MenuItem("Game/Map/从场景甲板采样可行走内沿", false, 101)]
         public static void BakeFromLiveMap()
         {
-            Transform root = BattleScene.Map;
+            Transform root = FindMapRoot();
             if (root == null)
-            {
-                var riot = GameObject.Find("Riot_HowlingAbyss");
-                root = riot != null ? riot.transform : null;
-            }
-
-            if (root == null)
-                throw new System.InvalidOperationException("场景里找不到地图。");
+                throw new System.InvalidOperationException("场景里找不到地图。打开带 Map / HowlingAbyss 的战斗场景后再点。");
 
             var filters = root.GetComponentsInChildren<MeshFilter>(true);
             var added = new List<MeshCollider>();
@@ -104,6 +98,30 @@ namespace Client.EditorTools
                         Object.DestroyImmediate(added[i]);
                 }
             }
+        }
+
+        static Transform FindMapRoot()
+        {
+            if (BattleScene.Map != null)
+                return BattleScene.Map;
+            if (AuthoredMapRoot.TryFind(out var authored) && authored != null)
+                return authored.transform;
+            string[] names = { "Riot_HowlingAbyss", "Map_HowlingAbyss", "HowlingAbyss_Riot", "Map" };
+            for (int i = 0; i < names.Length; i++)
+            {
+                var go = GameObject.Find(names[i]);
+                if (go != null)
+                    return go.transform;
+            }
+
+            var all = Object.FindObjectsOfType<Transform>();
+            for (int i = 0; i < all.Length; i++)
+            {
+                if (all[i] != null && all[i].name.IndexOf("HowlingAbyss", System.StringComparison.OrdinalIgnoreCase) >= 0)
+                    return all[i];
+            }
+
+            return null;
         }
 
         static bool TrySampleRail(float along, out float lo, out float hi)
