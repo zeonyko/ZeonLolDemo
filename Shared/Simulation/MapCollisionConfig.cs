@@ -23,5 +23,9 @@ namespace Shared
         public string MapId = DefaultMapId;
         public bool UseUvMapBounds = true;
         public MapCollisionBlockerData[] Blockers = Array.Empty<MapCollisionBlockerData>();
+        /// <summary>可行走外框，和 WalkAcross 一一对应（推进轴）。</summary>
+        public float[] WalkAlong = Array.Empty<float>();
+        /// <summary>可行走外框，和 WalkAlong 一一对应（横向）。</summary>
+        public float[] WalkAcross = Array.Empty<float>();
     }
 }

@@ -23,15 +23,28 @@ namespace Client.EditorTools
                 list.Add(volumes[i].ToBlockerData());
             }
 
+            float[] walkAlong = System.Array.Empty<float>();
+            float[] walkAcross = System.Array.Empty<float>();
+            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
+            if (File.Exists(clientAbs))
+            {
+                var old = JsonUtility.FromJson<MapCollisionConfig>(File.ReadAllText(clientAbs));
+                if (old != null && old.WalkAlong != null && old.WalkAcross != null)
+                {
+                    walkAlong = old.WalkAlong;
+                    walkAcross = old.WalkAcross;
+                }
+            }
+
             var cfg = new MapCollisionConfig
             {
                 MapId = MapCollisionConfig.DefaultMapId,
                 UseUvMapBounds = true,
-                Blockers = list.ToArray()
+                Blockers = list.ToArray(),
+                WalkAlong = walkAlong,
+                WalkAcross = walkAcross
             };
             string json = JsonUtility.ToJson(cfg, true);
-            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
-
             WriteText(clientAbs, json);
             AssetDatabase.Refresh();
             if (log)
