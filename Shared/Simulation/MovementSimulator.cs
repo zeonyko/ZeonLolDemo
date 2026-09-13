@@ -61,10 +61,12 @@ namespace Shared
             if (dt > GameConstants.MaxInputDeltaTime)
                 dt = GameConstants.MaxInputDeltaTime;
 
+            WorldCollision.ClampToWalkable(ref state.PosX, ref state.PosZ);
             float originX = state.PosX;
             float originZ = state.PosZ;
             ApplyIntentDisplacement(ref state, input, dt);
             ClampAgainstWalls(ref state, originX, originZ);
+            WorldCollision.ClampToWalkable(ref state.PosX, ref state.PosZ);
             ApplyJumpAndGravity(ref state, input, dt);
             return state;
         }
@@ -157,8 +159,7 @@ namespace Shared
                 state.PosX, state.PosZ, dirX, dirZ, distance);
             state.PosX += dirX * actual;
             state.PosZ += dirZ * actual;
-            // 位移后拉回可行走区，免得算出界后走不动。
-            AramMap.ClampToLane(ref state.PosX, ref state.PosZ, WorldCollision.DefaultAgentRadius);
+            WorldCollision.ClampToWalkable(ref state.PosX, ref state.PosZ, WorldCollision.DefaultAgentRadius);
             return state;
         }
 

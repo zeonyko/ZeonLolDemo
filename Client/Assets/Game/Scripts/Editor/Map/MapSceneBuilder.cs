@@ -13,6 +13,22 @@ namespace Client.EditorTools
         [MenuItem("Game/Map/导出碰撞配置", false, 100)]
         public static void ExportCollisionMenu() => ExportCollisionInternal(log: true);
 
+        [MenuItem("Game/Map/采样可行走内沿", false, 101)]
+        [MenuItem("Game/采样可行走内沿", false, 50)]
+        public static void BakeWalkBoundaryMenu()
+        {
+            try
+            {
+                WalkBoundaryBaker.BakeFromLiveMap();
+                EditorUtility.DisplayDialog("可行走内沿", "已按当前场景甲板采样并写入碰撞表。看 Scene 青线。", "确定");
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogException(ex);
+                EditorUtility.DisplayDialog("可行走内沿", "采样失败：\n" + ex.Message, "确定");
+            }
+        }
+
         static void ExportCollisionInternal(bool log)
         {
             var volumes = Object.FindObjectsOfType<MapCollisionVolume>();
@@ -23,15 +39,28 @@ namespace Client.EditorTools
                 list.Add(volumes[i].ToBlockerData());
             }
 
+            float[] walkAlong = System.Array.Empty<float>();
+            float[] walkAcross = System.Array.Empty<float>();
+            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
+            if (File.Exists(clientAbs))
+            {
+                var old = JsonUtility.FromJson<MapCollisionConfig>(File.ReadAllText(clientAbs));
+                if (old != null && old.WalkAlong != null && old.WalkAcross != null)
+                {
+                    walkAlong = old.WalkAlong;
+                    walkAcross = old.WalkAcross;
+                }
+            }
+
             var cfg = new MapCollisionConfig
             {
                 MapId = MapCollisionConfig.DefaultMapId,
                 UseUvMapBounds = true,
-                Blockers = list.ToArray()
+                Blockers = list.ToArray(),
+                WalkAlong = walkAlong,
+                WalkAcross = walkAcross
             };
             string json = JsonUtility.ToJson(cfg, true);
-            string clientAbs = BattlePaths.Config("Maps", "Map_HowlingAbyss_Collision.json");
-
             WriteText(clientAbs, json);
             AssetDatabase.Refresh();
             if (log)

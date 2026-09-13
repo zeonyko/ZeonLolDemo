@@ -100,9 +100,21 @@ namespace Client.Battle
                     SpeedMultiplier = moveMul
                 });
 
+                float ox = TransformComp.Position.x;
+                float oz = TransformComp.Position.z;
                 TransformComp.ApplyMovementState(
                     moveState.PosX, moveState.PosY, moveState.PosZ,
                     moveState.VelY, moveState.IsGrounded);
+                float dx = moveState.PosX - ox;
+                float dz = moveState.PosZ - oz;
+                if (moving && dx * dx + dz * dz < 0.000001f)
+                {
+                    moveDir = Vector3.zero;
+                    moving = false;
+                    if (StateComp != null)
+                        StateComp.MoveIntent = Vector3.zero;
+                }
+
                 needSend = moving
                            || !moveState.IsGrounded
                            || Mathf.Abs(moveState.VelY) > 0.01f
